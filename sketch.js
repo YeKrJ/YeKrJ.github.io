@@ -1,5 +1,6 @@
 function setup() {
-  wX = windowHeight/660
+  frameRate(30);
+  wX = windowHeight/660;
   createCanvas(390*wX, 660*wX);
   arrayData = new ArrayData();
   arrayData.In();

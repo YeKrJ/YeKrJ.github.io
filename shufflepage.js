@@ -99,7 +99,7 @@ function shufflePage() {
     if (rT < 69) {
     rT++;
     }
-    translate(0,posPage[rT]-330)
+    translate(0,(posPage[rT]-330)*wX)
     resultPageOne();
     pop()
     clickNext = 2;

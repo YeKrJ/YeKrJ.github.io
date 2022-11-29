@@ -21,7 +21,7 @@ class Card {
     push()
     translate(pos[j]*wX, pos[j+1]*wX)
     rotate(rot[i]);
-    image(this.ig, this.x, this.y, this.width, this.height);
+    image(this.ig, this.x*wX, this.y*wX, this.width*wX, this.height*wX);
     pop();
   }
   
