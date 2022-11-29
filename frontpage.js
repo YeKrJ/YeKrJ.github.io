@@ -1,6 +1,6 @@
 function frontPage() {
   background(255);
-  image(logo, 62, 68, 268*wX, 47*wX);
+  image(logo, 62*wX, 68*wX, 268*wX, 47*wX);
   button1 = new Button (61, 240, 270, 48, oneButtonA, oneButtonP);
   button2 = new Button (61, 327, 270, 48, twoButtonA, twoButtonP);
   button3 = new Button (61, 414, 270, 48, multiButtonA, multiButtonP);
