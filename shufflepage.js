@@ -94,31 +94,55 @@ function shufflePage() {
   if (clickNext == 1) {
     resultOneNumber = int(random(21.4))
   }
-  if (clickNext > 0 && modeOne == true) {
-    push();
-    if (rT < 69) {
-    rT++;
+  if (clickNext == 1) {
+    if (modeOne == true) {
+      push();
+      if (rT < 69) {
+      rT++;
+      }
+      translate(0,(posPage[rT]-330)*wX)
+      resultPageOne();
+      pop()
     }
-    translate(0,(posPage[rT]-330)*wX)
-    resultPageOne();
-    pop()
-    clickNext = 2;
-  }
-  if (clickNext > 0 && modeTwo == true) {
-    push();
-    if (rT < 69) {
-    rT++;
+    else if (modeTwo == true) {
+      push();
+      if (rT < 69) {
+      rT++;
+      }
+      translate(0,(posPage[rT]-330)*wX)
+      resultPageTwo();
+      pop()
+    } else {
+      push();
+      if (rT < 69) {
+      rT++;
+      }
+      translate(0,(posPage[rT]-330)*wX)
+      resultPageOne();
+      pop()
     }
-    translate(0,(posPage[rT]-330)*wX)
-    resultPageTwo();
-    pop()
-    clickNext = 2;
   }
 }
 
 function shuffleSelect() {
     if (modeOne) {
       if (cardNumber < 1) {
+        for(i=1;i<12;i++) {
+        cardClickPX[i] = (width/10*i)
+        if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
+          cardSelected[i]++;
+        }
+        if (cardSelected[i] % 2 == 1) {
+          selected[i] = true;
+        }
+        if (selected[i]) {
+          cardNumber++;
+        }
+        }
+      }
+    } 
+    if (modeTwo) {
+      if (cardNumber < 2) {
         for(i=1;i<12;i++) {
         cardClickPX[i] = (width/10*i)
         if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {

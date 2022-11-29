@@ -22,7 +22,10 @@ function draw() {
   background(255);
   frameRate(30);
   if (clickCheck == 0) frontPage();
-  if (clickCheck == 1) description();
+  if (clickCheck == 1) {
+    if (modeOne) description(1);
+    if (modeTwo) description(2);
+  }
   shufflePage();
   script();
   if (clickCheck > 1) {
@@ -38,12 +41,16 @@ function draw() {
 
 function clickNtouch() {
   if (button1.click()) {
-  clickCheck++;
-  modeOne = true;
+    clickCheck++;
+    if (clickCheck == 0) {
+      modeOne = true;
+    }
   }
   if (button2.click()) {
-  clickCheck++;
-  modeTwo = true;
+    clickCheck++;
+    if (clickCheck == 0) {
+      modeTwo = true;
+    }
   }
   if (button3.click()) {
   clickCheck++;

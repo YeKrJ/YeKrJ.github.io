@@ -27,6 +27,9 @@ let cardClickPX = [];
 let cardM = [];
 let cardMBg = [];
 
+let modeLogo = [];
+let modeDes = [];
+
 let selected = [];
 let cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let wX = 1.2;
@@ -63,14 +66,14 @@ function preload() {
   nextButtonP = loadImage("assets/ui/nextButtonP.png");
   shuffleResetA = loadImage("assets/ui/shuffleResetA.png");
   shuffleResetP = loadImage("assets/ui/shuffleResetP.png");
-  modeLogo1 = loadImage("assets/ui/oneCardDescriptionLogo.png");
-  modeLogo2 = loadImage("assets/ui/twoCardDescriptionLogo.png");
-  modeLogo3 = loadImage("assets/ui/multiCardDescriptionLogo.png");
-  modeLogo4 = loadImage("assets/ui/manualDescriptionLogo.png");
-  modeDes1 = loadImage("assets/ui/oneCardDescription.png");
-  modeDes2 = loadImage("assets/ui/twoCardDescription.png");
-  modeDes3 = loadImage("assets/ui/multiCardDescription.png");
-  modeDes4 = loadImage("assets/ui/manualDescription.png");
+  modeLogo[1] = loadImage("assets/ui/oneCardDescriptionLogo.png");
+  modeLogo[2] = loadImage("assets/ui/twoCardDescriptionLogo.png");
+  modeLogo[3] = loadImage("assets/ui/multiCardDescriptionLogo.png");
+  modeLogo[4] = loadImage("assets/ui/manualDescriptionLogo.png");
+  modeDes[1] = loadImage("assets/ui/oneCardDescription.png");
+  modeDes[2] = loadImage("assets/ui/twoCardDescription.png");
+  modeDes[3] = loadImage("assets/ui/multiCardDescription.png");
+  modeDes[4] = loadImage("assets/ui/manualDescription.png");
   caution = loadImage("assets/ui/caution.png");
   startDes = loadImage("assets/ui/startDescription.png");
   startButtonA = loadImage("assets/ui/startButtonA.png");
