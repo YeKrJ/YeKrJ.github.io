@@ -90,6 +90,16 @@ function preload() {
   resetButtonP = loadImage("assets/ui/resetButtonP.png");
   shareButtonA = loadImage("assets/ui/shareButtonA.png");
   shareButtonP = loadImage("assets/ui/shareButtonP.png");
+  twoGuide = loadImage("assets/ui/twoGuide.png");
+  firstBar = loadImage("assets/ui/twoFirstBar.png");
+  meBack = loadImage("assets/ui/twoResultMeBack.png");
+  youBack = loadImage("assets/ui/twoResultYouBack.png");
+  twoResultMore = loadImage("assets/ui/twoResultMoreDes.png");
+  twoResultLove = loadImage("assets/ui/twoResultLove.png");
+  twoResultDefault = loadImage("assets/ui/twoResultDefault.png");
+  twoResultFriend = loadImage("assets/ui/twoResultFriend.png");
+  twoResultLove = loadImage("assets/ui/twoResultWar.png");
+  twoResultWork = loadImage("assets/ui/twoResultWork.png");
 }
 
 

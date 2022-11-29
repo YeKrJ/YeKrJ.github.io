@@ -43,6 +43,7 @@ function clickNtouch() {
   }
   if (button2.click()) {
   clickCheck++;
+  modeTwo = true;
   }
   if (button3.click()) {
   clickCheck++;

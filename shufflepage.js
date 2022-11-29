@@ -104,6 +104,16 @@ function shufflePage() {
     pop()
     clickNext = 2;
   }
+  if (clickNext > 0 && modeTwo == true) {
+    push();
+    if (rT < 69) {
+    rT++;
+    }
+    translate(0,(posPage[rT]-330)*wX)
+    resultPageTwo();
+    pop()
+    clickNext = 2;
+  }
 }
 
 function shuffleSelect() {
