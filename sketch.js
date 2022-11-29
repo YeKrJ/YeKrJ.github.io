@@ -1,5 +1,4 @@
 function setup() {
-  frameRate(30);
   wX = windowHeight/660;
   createCanvas(390*wX, 660*wX);
   arrayData = new ArrayData();
