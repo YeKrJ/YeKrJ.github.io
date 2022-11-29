@@ -65,6 +65,7 @@ function clickNtouch() {
     rT = 0;
     clickNext = 0;
     cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    selected = [false, false, false, false, false, false, false, false, false, false, false];
     selected = [];
   }
   if (cardNumber > 0 && buttonNextS.click()) {
@@ -79,6 +80,12 @@ function clickNtouch() {
   if (resetButton.click()) {
     cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     selected = [false, false, false, false, false, false, false, false, false, false, false];
+    i0 = 0;
+    j0 = 0;
+    i = 0;
+    j = 0;
+    i2 = 0;
+    j2 = 0;
     rT = 0;
     clickNext = 0;
     clickCheck = 3;
