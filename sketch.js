@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background(200);
+  background(255);
   frameRate(30);
   if (clickCheck == 0) frontPage();
   if (clickCheck == 1) description();

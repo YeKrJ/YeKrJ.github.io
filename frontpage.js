@@ -1,5 +1,5 @@
 function frontPage() {
-  background(200);
+  background(255);
   image(logo, 62, 68, 268*wX, 47*wX);
   button1 = new Button (61, 240, 270, 48, oneButtonA, oneButtonP);
   button2 = new Button (61, 327, 270, 48, twoButtonA, twoButtonP);
