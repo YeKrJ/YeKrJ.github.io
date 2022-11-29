@@ -94,33 +94,15 @@ function shufflePage() {
   if (clickNext == 1) {
     resultOneNumber = int(random(21.4))
   }
-  if (clickNext == 1) {
-    if (modeOne == true) {
-      push();
-      if (rT < 69) {
-      rT++;
-      }
-      translate(0,(posPage[rT]-330)*wX)
-      resultPageOne();
-      pop()
+  if (clickNext > 0) {
+    push();
+    if (rT < 69) {
+    rT++;
     }
-    else if (modeTwo == true) {
-      push();
-      if (rT < 69) {
-      rT++;
-      }
-      translate(0,(posPage[rT]-330)*wX)
-      resultPageTwo();
-      pop()
-    } else {
-      push();
-      if (rT < 69) {
-      rT++;
-      }
-      translate(0,(posPage[rT]-330)*wX)
-      resultPageOne();
-      pop()
-    }
+    translate(0,(posPage[rT]-330)*wX)
+    resultPageOne();
+    pop()
+    clickNext = 2;
   }
 }
 
@@ -140,8 +122,7 @@ function shuffleSelect() {
         }
         }
       }
-    } 
-    if (modeTwo) {
+    } else {
       if (cardNumber < 2) {
         for(i=1;i<12;i++) {
         cardClickPX[i] = (width/10*i)
@@ -156,5 +137,5 @@ function shuffleSelect() {
         }
         }
       }
-    } 
+    }
 }

@@ -16,6 +16,7 @@ function setup() {
   yn = [ynS,ynY,ynS,ynY,ynY,ynY,ynY,ynY,ynY,ynN,ynY,ynS,ynN,ynN,ynN,ynN,ynN,ynN,ynN,ynN,ynN];
   selected = [false, false, false, false, false, false, false, false, false, false, false];
   cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  modeOne = false;
 }
 
 function draw() {
@@ -23,8 +24,11 @@ function draw() {
   frameRate(30);
   if (clickCheck == 0) frontPage();
   if (clickCheck == 1) {
-    if (modeOne) description(1);
-    if (modeTwo) description(2);
+    if (modeOne) {
+      description(1);
+    } else {
+      description(2);
+    }
   }
   shufflePage();
   script();
@@ -41,16 +45,12 @@ function draw() {
 
 function clickNtouch() {
   if (button1.click()) {
-    clickCheck++;
-    if (clickCheck == 0) {
-      modeOne = true;
-    }
+  clickCheck++;
+  modeOne = true;
   }
   if (button2.click()) {
-    clickCheck++;
-    if (clickCheck == 0) {
-      modeTwo = true;
-    }
+  clickCheck++;
+  modeTwo++;
   }
   if (button3.click()) {
   clickCheck++;
@@ -75,6 +75,7 @@ function clickNtouch() {
     cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     selected = [false, false, false, false, false, false, false, false, false, false, false];
     selected = [];
+    modeOne = false;
   }
   if (cardNumber > 0 && buttonNextS.click()) {
   clickNext++;
@@ -84,6 +85,7 @@ function clickNtouch() {
     selected = [false, false, false, false, false, false, false, false, false, false, false];
     cardNumber = 0;
     rT = 0;
+    modeOne = false;
   }
   if (resetButton.click()) {
     cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -98,6 +100,7 @@ function clickNtouch() {
     clickNext = 0;
     clickCheck = 3;
     cardNumber = 0;
+    modeOne = false;
   }
   if (shareButton.click()) {
     save('TarotResult'+'_'+year()+'_'+month()+'_'+day()+'_'+hour()+'_'+minute()+'_'+second()+'.png');
