@@ -110,8 +110,8 @@ function shuffleSelect() {
     if (modeOne) {
       if (cardNumber < 1) {
         for(i=1;i<12;i++) {
-        cardClickPX[i] = width/10*i
-        if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40 && mouseY > 276 && mouseY < 276+150) {
+        cardClickPX[i] = (width/10*i)
+        if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
           cardSelected[i]++;
         }
         if (cardSelected[i] % 2 == 1) {

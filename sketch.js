@@ -1,5 +1,6 @@
 function setup() {
-  createCanvas(390, 660);
+  wX = windowHeight/660
+  createCanvas(390*wX, 660*wX);
   arrayData = new ArrayData();
   arrayData.In();
   arrayData.Out();
@@ -18,14 +19,14 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(200);
   frameRate(30);
   if (clickCheck == 0) frontPage();
   if (clickCheck == 1) description();
   shufflePage();
   script();
   if (clickCheck > 1) {
-    if (modeOne) image(currentOne, 139, 37, 109, 26);
+    if (modeOne) image(currentOne, 139*wX, 37*wX, 109*wX, 26*wX);
   }
   if (clickNext > 0) {
     resetButton.over();

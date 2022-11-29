@@ -12,14 +12,14 @@ class Card {
   }
   
   display() {
-    image(this.ig, this.x, this.y, this.width, this.height);
+    image(this.ig, this.x*wX, this.y*wX, this.width*wX, this.height*wX);
   }
   
   move(rot, pos, i, j) {
     this.x = -this.width/2;
     this.y = -this.height/2;
     push()
-    translate(pos[j], pos[j+1])
+    translate(pos[j]*wX, pos[j+1]*wX)
     rotate(rot[i]);
     image(this.ig, this.x, this.y, this.width, this.height);
     pop();
@@ -28,7 +28,7 @@ class Card {
   over(pos, j) {
     this.x += pos[j];
     this.y += pos[j+1]
-    if (mouseX > this.x && mouseX < this.x+this.width/2 && mouseY > this.y && mouseY < this.y+this.height) {
+    if (mouseX > this.x*wX && mouseX < (this.x+this.width/2)*wX && mouseY > this.y*wX && mouseY < (this.y+this.height)*wX) {
       this.ig = this.igA;
     } else {
       this.ig = this.igD;

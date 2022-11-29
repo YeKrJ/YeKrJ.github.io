@@ -1,9 +1,9 @@
 class Button {
   constructor (x,y,w,h,imgA,imgP) {
-  this.x = x;
-  this.y = y;
-  this.width = w;
-  this.height = h;
+  this.x = x*wX;
+  this.y = y*wX;
+  this.width = w*wX;
+  this.height = h*wX;
   this.img = imgP;
   this.imgA = imgA;
   this.imgP = imgP;

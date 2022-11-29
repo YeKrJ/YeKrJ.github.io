@@ -1,9 +1,9 @@
 function description(){
-  image(logo,148,59,94,16);
-  image(modeLogo1,45,99,193,88);
-  image(modeDes1,45,218,299,80);
-  image(caution,59,335,265,136);
-  image(startDes,47,505,297,11);
+  image(logo,148*wX,59*wX,94*wX,16*wX);
+  image(modeLogo1,45*wX,99*wX,193*wX,88*wX);
+  image(modeDes1,45*wX,218*wX,299*wX,80*wX);
+  image(caution,59*wX,335*wX,265*wX,136*wX);
+  image(startDes,47*wX,505*wX,297*wX,11*wX);
   nextButtonDes.over();
   nextButtonDes.display();
 }

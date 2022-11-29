@@ -29,6 +29,7 @@ let cardMBg = [];
 
 let selected = [];
 let cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+let wX = 1.2;
 
 let clickNext = 0;
 let rT = 0;
