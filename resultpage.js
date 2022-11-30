@@ -9,7 +9,7 @@ function resultPageOne() {
   textSize(22*wX);
   push();
   fill(0, 25);
-  textAlign(RIGHT)
+  textAlign(RIGHT);
   text(tarotEng[resultOneNumber], 310*wX, 270*wX);
   pop();
   textLeading(15*wX);
@@ -26,38 +26,60 @@ function resultPageOne() {
 }
 
 function resultPageTwo() {
+  fill(0);
   image(cardMBg[resultOneNumber], 0, 0, width, height);
-  image(yn[resultOneNumber], 139*wX, 37*wX, 109*wX, 26*wX);
-  image(cardM[resultOneNumber], 38*wX, 83*wX, 105*wX, 184*wX);
-  image(cardM[resultOneNumber], 248*wX, 83*wX, 105*wX, 184*wX);
-  
+  image(currentOne, 139*wX, 37*wX, 109*wX, 26*wX);
   image(firstBar,128*wX,151*wX,137*wX,23*wX);
-  image(twoGuide,145*wX,83*wX,100*wX,174*wX);
-  text(fontb,17*wX);
-  text("80%",70*wX,239*wX);
-  Rect(128,165,x,7);
-
-  image(meBack, 39*wX, 252*wX, 153*wX, 42*wX);
-  image(meBack, 199*wX, 252*wX, 153*wX, 42*wX);
-  
-  fill(255,0,0,150);
-  textSize(13*wX);
+  textSize(17*wX);
   textFont(fontg);
-  text(tarotName[resultOneNumber], 50*wX, 279*wX);
+  text('본인',142*wX,108*wX);
+  text('상대',215*wX,232*wX);
+  textAlign(CENTER)
+  text('80%',70*wX,239*wX);
+  rect(128,165,100,7);
 
-  fill(0,0,255,150);
-  text(tarotName[resultOneNumber], 231*wX, 279*wX);
+  image(cardM[resultTwoNumber1], 38*wX, 83*wX, 105*wX, 184*wX);
+  image(cardM[resultTwoNumber2], 248*wX, 83*wX, 105*wX, 184*wX);
+
+  image(meBack, 37*wX, 232*wX, 160*wX, 50*wX);
+  image(youBack, 193*wX, 232*wX, 160*wX, 50*wX);
+  
+  textAlign(LEFT);
+  if(resultTwoNumber1 < 4) {
+  fill(250,100,0);
+  } else if (resultTwoNumber1 < 8) {
+    fill(220,200,0)
+  } else if (resultTwoNumber1 < 12) {
+    fill(50,200,0)
+  } else {
+    fill(10,150,220)
+  }
+  textSize(12*wX);
+  textFont(fontg);
+  text(tarotMName[resultTwoNumber1], 55*wX, 262*wX);
+  textAlign(RIGHT);
+  if(resultTwoNumber2 < 4) {
+    fill(250,100,0);
+    } else if (resultTwoNumber2 < 8) {
+      fill(220,200,0)
+    } else if (resultTwoNumber2 < 12) {
+      fill(50,200,0)
+    } else {
+      fill(10,150,220)
+    }
+  text(tarotMName[resultTwoNumber2], 335*wX, 262*wX);
 
   fill(0);
   textSize(20*wX);
   textFont(fontg);
-  text("'소년과 어머니의 관계'",width/2-textWidth(),320*wX);
-  
+  textAlign(CENTER);
+  text(tarotMScriptSumm[2][13],width/2,318*wX);
   textLeading(14*wX);
   textSize(9*wX);
+  textAlign(LEFT);
   textFont(fontm);
   textWrap(WORD);
-  text(tarotScript[13],48*wX,338*wX,295*wX);
-  image(twoResultMore,55*wX,497*wX,280*wX,81*wX);
-  image(twoResultDefault,134*wX,484*wX,121*wX,80*wX);
+  text(tarotMScript[2][13],48*wX,342*wX,295*wX, 160*wX);
+  image(twoResultMore,55*wX,497*wX,280*wX,80*wX);
+  image(twoResultDefault,134*wX,504*wX,121*wX,60*wX);
 }

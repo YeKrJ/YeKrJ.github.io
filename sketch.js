@@ -26,7 +26,7 @@ function draw() {
   if (clickCheck == 1) {
     if (modeOne) {
       description(1);
-    } else {
+    } else if (modeTwo) {
       description(2);
     }
   }
@@ -50,7 +50,7 @@ function clickNtouch() {
   }
   if (button2.click()) {
   clickCheck++;
-  modeTwo++;
+  modeTwo = true;
   }
   if (button3.click()) {
   clickCheck++;
@@ -77,9 +77,20 @@ function clickNtouch() {
     selected = [];
     modeOne = false;
   }
-  if (cardNumber > 0 && buttonNextS.click()) {
-  clickNext++;
+  if (modeOne) {
+    if (cardNumber > 0 && buttonNextS.click()) {
+      clickNext++;
+      }
+  } else if (modeTwo) {
+    if (cardNumber > 2 && buttonNextS.click()) {
+      clickNext++;
+      }
+  } else {
+    if (cardNumber > 7 && buttonNextS.click()) {
+      clickNext++;
+      }
   }
+  
   if (buttonResetS.click()) {
     cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     selected = [false, false, false, false, false, false, false, false, false, false, false];
@@ -105,7 +116,9 @@ function clickNtouch() {
   if (shareButton.click()) {
     save('TarotResult'+'_'+year()+'_'+month()+'_'+day()+'_'+hour()+'_'+minute()+'_'+second()+'.png');
   }
+  if (clickCheck > 2) {
   shuffleSelect();
+  }
 }
 
 function mousePressed() {

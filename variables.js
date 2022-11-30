@@ -6,7 +6,10 @@ let i2 = 0;
 let j2 = 0;
 let clickCheck = 0;
 let cardNumber = 0;
+
 let resultOneNumber = 0;
+let resultTwoNumber1 = 0;
+let resultTwoNumber2 = 0;
 
 let rotIn = [];
 let posIn = [];

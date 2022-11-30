@@ -92,17 +92,44 @@ function shufflePage() {
   }
   // image(card, 200, 200, 105*a, 185*a);
   if (clickNext == 1) {
-    resultOneNumber = int(random(21.4))
+    if (modeOne) resultOneNumber = int(random(21.4))
+    if (modeTwo) {
+      resultTwoNumber1 = int(random(16.4))
+      resultTwoNumber2 = int(random(16.4))
+      if (resultTwoNumber1 == resultTwoNumber2) {
+        resultTwoNumber2 = int(random(16.4))
+      }
+    } else resultOneNumber = int(random(21.4))
   }
   if (clickNext > 0) {
-    push();
-    if (rT < 69) {
-    rT++;
-    }
-    translate(0,(posPage[rT]-330)*wX)
-    resultPageOne();
-    pop()
-    clickNext = 2;
+    if (modeOne == true) {
+      push();
+      if (rT < 69) {
+      rT++;
+      }
+      translate(0,(posPage[rT]-330)*wX)
+      resultPageOne();
+      pop();
+      clickNext = 2;
+    } else if (modeTwo) {
+      push();
+      if (rT < 69) {
+      rT++;
+      }
+      translate(0,(posPage[rT]-330)*wX);
+      resultPageTwo();
+      pop();
+      clickNext = 2;
+      } else {
+        push();
+        if (rT < 69) {
+        rT++;
+        }
+        translate(0,(posPage[rT]-330)*wX);
+        resultPageTwo();
+        pop();
+        clickNext = 2;
+      }
   }
 }
 
@@ -112,24 +139,30 @@ function shuffleSelect() {
         for(i=1;i<12;i++) {
         cardClickPX[i] = (width/10*i)
         if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
-          cardSelected[i]++;
-        }
-        if (cardSelected[i] % 2 == 1) {
           selected[i] = true;
+        } 
+        if (selected[i]) {
+          cardNumber++;
         }
+        }
+      }
+    } else if (modeTwo) {
+      if (cardNumber < 2) {
+        for(i=1;i<12;i++) {
+        cardClickPX[i] = (width/10*i)
+        if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
+          selected[i] = true;
+        } 
         if (selected[i]) {
           cardNumber++;
         }
         }
       }
     } else {
-      if (cardNumber < 2) {
+      if (cardNumber < 6) {
         for(i=1;i<12;i++) {
         cardClickPX[i] = (width/10*i)
         if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
-          cardSelected[i]++;
-        }
-        if (cardSelected[i] % 2 == 1) {
           selected[i] = true;
         }
         if (selected[i]) {
