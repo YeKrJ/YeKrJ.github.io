@@ -31,28 +31,23 @@ function shufflePage() {
     }
     pop()
     if (i0 >= 30 && j0 >= 58) {
-      clickCheck++;
-      i = 0;
+      clickCheck = 3;
     }
   }
   if (clickCheck >= 3 && clickNext == 0) {
-    i0 = 0;
-    j0 = 0;
-    i2 = 0;
-    j2 = 0;
     push();
     translate(0, -20);
-    if (i < 29) {
-      i++;
-    } 
-    if (j < 80) {
-      j+=2
-    }
     for (n=1;n<12;n++) {
       rot[n] = rotIn[n];
       pos[n] = posIn[n];
-      cards[n].move(rot[n], pos[n], i, j);
+      cards[n].move(rot[n], pos[n], ir, j);
       cards[n].over(pos[n], j);
+    }
+    if (ir < 29) {
+      ir++
+    } 
+    if (j < 80) {
+      j+=2
     }
     pop()
     for(n2=1;n2<12;n2++) {
@@ -60,9 +55,14 @@ function shufflePage() {
         cards[n2+2].click();
       }
     }
+    i0 = 0;
+    j0 = 0;
+    i2 = 0;
+    j2 = 0;
+    print(ir);
   } 
   if (clickNext > 0) {
-    i = 0;
+    ir = 0;
     j = 0;
     push();
     translate(0, -10);

@@ -28,14 +28,14 @@ function resultPageOne() {
 function resultPageTwo() {
   fill(0);
   image(cardMBg[resultOneNumber], 0, 0, width, height);
-  image(currentOne, 139*wX, 37*wX, 109*wX, 26*wX);
   image(firstBar,128*wX,151*wX,137*wX,23*wX);
   textSize(17*wX);
   textFont(fontg);
   text('본인',142*wX,108*wX);
   text('상대',215*wX,232*wX);
-  textAlign(CENTER)
-  text('80%',70*wX,239*wX);
+  textAlign(CENTER);
+  textSize(15*wX);
+  text(tarotMScore[2][13],width/2,188*wX);
   rect(128,165,100,7);
 
   image(cardM[resultTwoNumber1], 38*wX, 83*wX, 105*wX, 184*wX);

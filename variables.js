@@ -1,5 +1,6 @@
 let i0 = 0;
 let j0 = 0;
+let ir = 0;
 let i = 0;
 let j = 0;
 let i2 = 0;
