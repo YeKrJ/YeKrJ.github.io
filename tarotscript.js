@@ -1,5 +1,6 @@
 let tarotName = ['바보', '마법사', '여사제', '여제', '황제', '교황', '연인', '전차', '힘', '은둔자', '운명의 수레바퀴', '정의', '매달린 사람', '죽음', '절제', '악마', '탑', '별', '달', '태양', '심판', '세계'];
 let tarotEng = ['Fool', 'Magician', 'High Priestess', 'Empress', 'Emperor', 'Hierophant', 'Lovers', 'Chariot', 'Strength', 'Hermit', 'Wheel of Fortune', 'Justice', 'Hanged Man', 'Death', 'Temperance', 'Devil', 'Tower', 'Star', 'Moon', 'Sun', 'Judgement', 'World'];
+let tarotStar = [];
 let tarotScript = [];
 let tarotLove = [];
 let tarotMoney = [];
@@ -21,6 +22,7 @@ function majorScript() {
   tarotMoney[13] = "예상치 못한 큰 손해가 있을 수 있습니다.대비가 필요합니다.";
   tarotStudy[13] = "노력한 것에 비해 크게 실망할 수 있습니다.";
   tarotBus[13] = "예상치 못한 변수가 발생하여 크게 방향을 바꾸어야 할 수 있습니다.";
+  tarotStar[13] = "☆☆☆☆☆"
 }
 
 function minorScript() {

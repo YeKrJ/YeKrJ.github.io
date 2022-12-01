@@ -100,9 +100,14 @@ function resultPageTwo() {
 
 function resultPageManual() {
   resultCheck = true;
-  image(cardJ[resultManualNumber1], 38*wX, 83*wX, 105*wX*0.9, 184*wX*0.9);
-  image(cardJ[resultManualNumber2], 147*wX, 83*wX, 105*wX*0.9, 184*wX*0.9);
-  image(cardJ[resultManualNumber3], 256*wX, 83*wX, 105*wX*0.9, 184*wX*0.9);
+  image(cardJ[resultManualNumber1], 38*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
+  textAlign(CENTER);
+  textSize(13*wX);
+  text(tarotStar[13], 86*wX, 270*wX);
+  image(cardJ[resultManualNumber2], 147*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
+  text(tarotStar[13], 195*wX, 270*wX);
+  image(cardJ[resultManualNumber3], 256*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
+  text(tarotStar[13], 304*wX, 270*wX);
   image(manualUI, 0, 0, width, height);
   fill(0);
   textSize(25*wX);
