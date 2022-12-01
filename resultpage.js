@@ -19,10 +19,10 @@ function resultPageOne() {
   text(tarotScript[13],61*wX,304*wX,268*wX,400*wX);
   image(oneResultMore,55*wX,497*wX,280*wX,81*wX);
   textFont(fontm, 6*wX);
-  text("성사되기 어렵거나, 위기에 있습니다. 섣부른 판단은 금물입니다.", 95*wX,517*wX);
-  text("예상치 못한 큰 손해가 있을 수 있습니다.대비가 필요합니다.", 95*wX,532*wX);
-  text("노력한 것에 비해 크게 실망할 수 있습니다.", 95*wX,547*wX);
-  text("예상치 못한 변수가 발생하여 크게 방향을 바꾸어야 할 수 있습니다.", 95*wX,562*wX);
+  text(tarotLove[13], 95*wX,517*wX);
+  text(tarotMoney[13], 95*wX,532*wX);
+  text(tarotStudy[13], 95*wX,547*wX);
+  text(tarotBus[13], 95*wX,562*wX);
 }
 
 function resultPageTwo() {
