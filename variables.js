@@ -90,6 +90,7 @@ function preload() {
   startButtonA = loadImage("assets/ui/startButtonA.png");
   startButtonP = loadImage("assets/ui/startButtonP.png");
   fontg = loadFont("assets/GmarketSansTTFBold.ttf");
+  fontgm = loadFont("assets/GmarketSansTTFMedium.ttf");
   currentOne = loadImage("assets/ui/currentOneA.png");
   currentTwo = loadImage("assets/ui/currentTwoA.png");
   currentMulti = loadImage("assets/ui/currentMultiA.png");
@@ -117,6 +118,8 @@ function preload() {
   twoResultFriend = loadImage("assets/ui/twoResultFriend.png");
   twoResultLove = loadImage("assets/ui/twoResultWar.png");
   twoResultWork = loadImage("assets/ui/twoResultWork.png");
+  twoDesMe = loadImage("assets/ui/twoDesMe.png");
+  twoDesYou = loadImage("assets/ui/twoDesYou.png");
 }
 
 

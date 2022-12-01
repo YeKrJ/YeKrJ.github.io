@@ -35,7 +35,7 @@ function frontPage() {
   text("→ 추천", 62*wX, 475*wX);  
   textFont(fontm, 9*wX);
   text("오늘의 운세, 성공 확률, Yes or No 질문, 이번 달의 재물운...", 91*wX, 300*wX);
-  text("커플 궁합, 친구 간 궁합,관계성...", 91*wX, 387*wX);
+  text("커플 궁합, 친구 간 궁합, 관계성...", 91*wX, 387*wX);
   text("식사메뉴 고르기, 이사 갈 집 고르기, 여러 과목의 성적운...", 91*wX, 475*wX);
   pop();
 }

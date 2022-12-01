@@ -36,7 +36,8 @@ function draw() {
     }
   }
   shufflePage();
-  script();
+  majorScript();
+  minorScript();
   if (clickCheck > 1) {
     if (modeOne) image(currentOne, 139*wX, 37*wX, 109*wX, 26*wX);
     else if (modeTwo) image(currentTwo, 139*wX, 37*wX, 109*wX, 26*wX);

@@ -93,10 +93,10 @@ function shufflePage() {
   if (clickNext == 1) {
     if (modeOne) resultOneNumber = int(random(21.4))
     if (modeTwo) {
-      resultTwoNumber1 = int(random(16.4))
-      resultTwoNumber2 = int(random(16.4))
+      resultTwoNumber1 = int(random(15.4))
+      resultTwoNumber2 = int(random(15.4))
       if (resultTwoNumber1 == resultTwoNumber2) {
-        resultTwoNumber2 = int(random(16.4))
+        resultTwoNumber2 = int(random(15.4))
       }
     } else resultOneNumber = int(random(21.4))
   }

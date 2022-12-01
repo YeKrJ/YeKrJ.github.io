@@ -44,6 +44,8 @@ function resultPageTwo() {
   image(cardM[resultTwoNumber1], 38*wX, 83*wX, 105*wX, 184*wX);
   image(cardM[resultTwoNumber2], 248*wX, 83*wX, 105*wX, 184*wX);
 
+  image(twoDesMe, 37*wX, 232*wX, 160*wX, 142*wX);
+  image(twoDesYou, 193*wX, 232*wX, 160*wX, 142*wX);
   image(meBack, 37*wX, 232*wX, 160*wX, 50*wX);
   image(youBack, 193*wX, 232*wX, 160*wX, 50*wX);
   
@@ -73,16 +75,25 @@ function resultPageTwo() {
   text(tarotMName[resultTwoNumber2], 334*wX, 262*wX);
 
   fill(0);
+  textSize(11.5*wX);
+  textFont(fontgm);
+  textAlign(LEFT);
+  text(tarotMOne[2], 57*wX, 298*wX, 129*wX, 34*wX);
+  text(tarotMTwo[2], 57*wX, 338*wX, 129*wX, 34*wX);
+  textAlign(RIGHT);
+  text(tarotMOne[15], 206*wX, 298*wX, 129*wX, 34*wX);
+  text(tarotMTwo[15], 206*wX, 338*wX, 129*wX, 34*wX);
+
   textSize(20*wX);
   textFont(fontg);
   textAlign(CENTER);
-  text(tarotMScriptSumm[2][13],width/2,310*wX);
+  text(tarotMScriptSumm[2][13],width/2,406*wX);
   textLeading(14*wX);
   textSize(9*wX);
   textAlign(LEFT);
   textFont(fontm);
   textWrap(WORD);
-  text(tarotMScript[2][13],48*wX,337*wX,295*wX, 160*wX);
-  image(twoResultMore,55*wX,497*wX,280*wX,80*wX);
-  image(twoResultDefault,134*wX,504*wX,121*wX,60*wX);
+  text(tarotMScript[2][13],48*wX,437*wX, 295*wX, 45*wX);
+  image(twoResultMore,55*wX,490*wX,280*wX,80*wX);
+  image(twoResultDefault,134*wX,497*wX,121*wX,60*wX);
 }
