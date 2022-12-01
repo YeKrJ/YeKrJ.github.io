@@ -1,7 +1,7 @@
 function resultPageOne() {
-  image(cardMBg[resultOneNumber], 0, 0, width, height);
+  image(cardJBg[resultOneNumber], 0, 0, width, height);
   image(yn[resultOneNumber], 53*wX, 197*wX, 77*wX, 33*wX);
-  image(cardM[resultOneNumber], 142*wX, 72*wX, 105*wX, 185*wX);
+  image(cardJ[resultOneNumber], 142*wX, 72*wX, 105*wX, 185*wX);
   image(oneResultBack, 52*wX, 222*wX, 279*wX, 70*wX);
   textSize(34*wX);
   textFont(fontg);
@@ -97,3 +97,82 @@ function resultPageTwo() {
   image(twoResultMore,55*wX,490*wX,280*wX,80*wX);
   image(twoResultDefault,134*wX,497*wX,121*wX,60*wX);
 }
+
+function resultPageManual() {
+  resultCheck = true;
+  image(cardJ[resultManualNumber1], 38*wX, 83*wX, 105*wX*0.9, 184*wX*0.9);
+  image(cardJ[resultManualNumber2], 147*wX, 83*wX, 105*wX*0.9, 184*wX*0.9);
+  image(cardJ[resultManualNumber3], 256*wX, 83*wX, 105*wX*0.9, 184*wX*0.9);
+  image(manualUI, 0, 0, width, height);
+  fill(0);
+  textSize(25*wX);
+  textFont(fontg);
+  textAlign(LEFT);
+  text(tarotName[resultManualNumber1], 108*wX, 328*wX);
+  text(tarotName[resultManualNumber2], 108*wX, 407*wX);
+  text(tarotName[resultManualNumber3], 108*wX, 486*wX);
+  textSize(20*wX);
+  fill(0, 15);
+  textAlign(RIGHT);
+  text(tarotEng[resultManualNumber1], 333*wX, 326*wX);
+  text(tarotEng[resultManualNumber2], 333*wX, 405*wX);
+  text(tarotEng[resultManualNumber3], 333*wX, 484*wX);
+  manualButton1.over();
+  manualButton1.display();
+  manualButton2.over();
+  manualButton2.display();
+  manualButton3.over();
+  manualButton3.display();
+  if (manualOne) {
+    image(manualDesOne, 51*wX, 292*wX, 289*wX, 252*wX);
+    tint(255, 20)
+    image(cardJ[resultManualNumber1], 243*wX, 352*wX, 105*wX*0.8, 184*wX*0.8);
+    tint(255, 255)
+    fill(0);
+    textSize(25*wX);
+    textFont(fontg);
+    textAlign(LEFT);
+    text(tarotName[resultManualNumber1], 71*wX, 330*wX);
+    textLeading(11*wX);
+    textSize(8*wX);
+    textFont(fontm);
+    textWrap(WORD);
+    text(tarotScript[13],73*wX,352*wX,250*wX,400*wX);
+  }
+  if (manualTwo) {
+    image(manualDesTwo, 51*wX, 292*wX, 289*wX, 252*wX);
+    tint(255, 20)
+    image(cardJ[resultManualNumber2], 243*wX, 352*wX, 105*wX*0.8, 184*wX*0.8);
+    tint(255, 255)
+    fill(0);
+    textSize(25*wX);
+    textFont(fontg);
+    textAlign(LEFT);
+    text(tarotName[resultManualNumber2], 71*wX, 330*wX);
+    textLeading(11*wX);
+    textSize(8*wX);
+    textFont(fontm);
+    textWrap(WORD);
+    text(tarotScript[13],73*wX,352*wX,250*wX,400*wX);
+  }
+  if (manualThree) {
+    image(manualDesThree, 51*wX, 292*wX, 289*wX, 252*wX);
+    tint(255, 20)
+    image(cardJ[resultManualNumber3], 243*wX, 352*wX, 105*wX*0.8, 184*wX*0.8);
+    tint(255, 255)
+    fill(0);
+    textSize(25*wX);
+    textFont(fontg);
+    textAlign(LEFT);
+    text(tarotName[resultManualNumber3], 71*wX, 330*wX);
+    textLeading(11*wX);
+    textSize(8*wX);
+    textFont(fontm);
+    textWrap(WORD);
+    text(tarotScript[13],73*wX,352*wX,250*wX,400*wX);
+  }
+  if (manualOne || manualTwo || manualThree) {
+    closeButton.over();
+    closeButton.display();
+  }
+ }

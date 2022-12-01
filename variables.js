@@ -9,8 +9,13 @@ let clickCheck = 0;
 let cardNumber = 0;
 
 let resultOneNumber = 0;
+
 let resultTwoNumber1 = 0;
 let resultTwoNumber2 = 0;
+
+let resultManualNumber1 = 0;
+let resultManualNumber2 = 0;
+let resultManualNumber3 = 0;
 
 let rotIn = [];
 let posIn = [];
@@ -30,6 +35,8 @@ let cardClickPX = [];
 
 let cardM = [];
 let cardMBg = [];
+let cardJ = [];
+let cardJBg = [];
 
 let modeLogo = [];
 let modeDes = [];
@@ -45,6 +52,11 @@ let modeOne = false;
 let modeTwo = false;
 let modeMulti = false;
 let modeManual = false;
+
+let resultCheck = false;
+let manualOne = false;
+let manualTwo = false;
+let manualThree = false;
 
 let desCheck = 0;
 let aniCheck = 0;
@@ -96,7 +108,9 @@ function preload() {
   currentMulti = loadImage("assets/ui/currentMultiA.png");
   currentManual = loadImage("assets/ui/currentManualA.png");
   for(i=0;i<22;i++) {
+  cardJ[i] = loadImage("assets/cards/cardMEX.png");
   cardM[i] = loadImage("assets/cards/cardMEX.png");
+  cardJBg[i] = loadImage("assets/cards/cardbackMEX.png");
   cardMBg[i] = loadImage("assets/cards/cardbackMEX.png");
   }
   ynY = loadImage("assets/ui/ynY.png");
@@ -120,6 +134,18 @@ function preload() {
   twoResultWork = loadImage("assets/ui/twoResultWork.png");
   twoDesMe = loadImage("assets/ui/twoDesMe.png");
   twoDesYou = loadImage("assets/ui/twoDesYou.png");
+  manualUI = loadImage("assets/ui/manualUI.png");
+  manualOneButtonA = loadImage("assets/ui/manualOneButtonA.png")
+  manualOneButtonP = loadImage("assets/ui/manualOneButtonP.png")
+  manualTwoButtonA = loadImage("assets/ui/manualTwoButtonA.png")
+  manualTwoButtonP = loadImage("assets/ui/manualTwoButtonP.png")
+  manualThreeButtonA = loadImage("assets/ui/manualThreeButtonA.png")
+  manualThreeButtonP = loadImage("assets/ui/manualThreeButtonP.png")
+  closeButtonA = loadImage("assets/ui/closeButtonA.png")
+  closeButtonP = loadImage("assets/ui/closeButtonP.png")
+  manualDesOne = loadImage("assets/ui/manualDesOne.png")
+  manualDesTwo = loadImage("assets/ui/manualDesTwo.png")
+  manualDesThree = loadImage("assets/ui/manualDesThree.png")
 }
 
 

@@ -98,7 +98,26 @@ function shufflePage() {
       if (resultTwoNumber1 == resultTwoNumber2) {
         resultTwoNumber2 = int(random(15.4))
       }
-    } else resultOneNumber = int(random(21.4))
+    } 
+    if (modeMulti) {
+      resultOneNumber = int(random(21.4))
+    }
+    if (modeManual) {
+      resultManualNumber1 = int(random(21.4))
+      resultManualNumber2 = int(random(21.4))
+      resultManualNumber3 = int(random(21.4))
+      while (resultManualNumber1 == resultManualNumber2 || resultManualNumber2 == resultManualNumber3 || resultManualNumber1 == resultManualNumber3) {
+        if (resultManualNumber1 == resultManualNumber2) {
+          resultManualNumber2 = int(random(0,22))
+        }
+        if (resultManualNumber2 == resultManualNumber3) {
+          resultManualNumber3 = int(random(0,22))
+        }
+        if (resultManualNumber3 == resultManualNumber1) {
+          resultManualNumber1 = int(random(0,22))
+        }
+      }
+    }
   }
   if (clickNext > 0) {
     if (modeOne == true) {
@@ -119,13 +138,22 @@ function shufflePage() {
       resultPageTwo();
       pop();
       clickNext = 2;
-      } else {
+      } else if (modeMulti) {
         push();
         if (rT < 69) {
         rT++;
         }
         translate(0,(posPage[rT]-330)*wX);
         resultPageTwo();
+        pop();
+        clickNext = 2;
+      } else {
+        push();
+        if (rT < 69) {
+        rT++;
+        }
+        translate(0,(posPage[rT]-330)*wX);
+        resultPageManual();
         pop();
         clickNext = 2;
       }

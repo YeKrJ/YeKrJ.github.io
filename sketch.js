@@ -11,8 +11,12 @@ function setup() {
   buttonNextS = new Button (194, 469, 56, 60, nextButtonA, nextButtonP);
   buttonResetS = new Button (140, 469, 56, 60, shuffleResetA, shuffleResetP);
   nextButtonDes = new Button (140,524,113,50, startButtonA, startButtonP);
-  resetButton = new Button (82,595,62,25,resetButtonA, resetButtonP)
-  shareButton = new Button (249,595,62,25,shareButtonA, shareButtonP)
+  resetButton = new Button (82,595,62,25,resetButtonA, resetButtonP);
+  shareButton = new Button (249,595,62,25,shareButtonA, shareButtonP);
+  manualButton1 = new Button(126, 541, 45, 45, manualOneButtonA, manualOneButtonP);
+  manualButton2 = new Button(173, 541, 45, 45, manualTwoButtonA, manualTwoButtonP);
+  manualButton3 = new Button(220, 541, 45, 45, manualThreeButtonA, manualThreeButtonP);
+  closeButton = new Button(312, 304, 16, 16, closeButtonA, closeButtonP);
   yn = [ynS,ynY,ynS,ynY,ynY,ynY,ynY,ynY,ynY,ynN,ynY,ynS,ynN,ynN,ynN,ynN,ynN,ynN,ynN,ynN,ynN];
   selected = [false, false, false, false, false, false, false, false, false, false, false];
   cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -81,7 +85,7 @@ function clickNtouch() {
   modeTwo = false;
   modeMulti = false;
   }
-  if (nextButtonDes.click() && desCheck == 10) {
+  if (nextButtonDes.click() && desCheck == 10 && resultCheck == false) {
   clickCheck = 2;
   }
   if (buttonH.click() && clickCheck > 0) {
@@ -103,6 +107,10 @@ function clickNtouch() {
     modeTwo = false;
     modeMulti = false;
     modeManual = false;
+    resultCheck = false;
+    manualOne = false;
+    manualTwo = false;
+    manualThree = false;
   }
   if (clickCheck > 1) {
   if (modeOne) {
@@ -147,12 +155,38 @@ function clickNtouch() {
     cardNumber = 0;
     desCheck = 0;
     scoreWidth = 0;
+    resultCheck = false;
+    manualOne = false;
+    manualTwo = false;
+    manualThree = false;
   }
   if (shareButton.click() && clickCheck > 2) {
     save('TarotResult'+'_'+year()+'_'+month()+'_'+day()+'_'+hour()+'_'+minute()+'_'+second()+'.png');
   }
   if (clickCheck > 2) {
   shuffleSelect();
+  }
+  if (resultCheck) {
+    if (manualButton1.click()) {
+      manualOne = true;
+      manualTwo = false;
+      manualThree = false;
+    }
+    if (manualButton2.click()) {
+      manualOne = false;
+      manualTwo = true;
+      manualThree = false;
+    }
+    if (manualButton3.click()) {
+      manualOne = false;
+      manualTwo = false;
+      manualThree = true;
+    }
+    if (closeButton.click()) {
+      manualOne = false;
+      manualTwo = false;
+      manualThree = false;
+    }
   }
 }
 
