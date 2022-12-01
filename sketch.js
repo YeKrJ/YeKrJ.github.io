@@ -88,6 +88,7 @@ function clickNtouch() {
     desCheck = 0;
     clickCheck = 0;
     clickNext = 0;
+    scoreWidth = 0;
     i0 = 0;
     j0 = 0;
     ir = 0;
@@ -129,9 +130,8 @@ function clickNtouch() {
     clickCheck = 3;
     cardNumber = 0;
     rT = 0;
-    desCheck = 0;
   }
-  if (resetButton.click() && clickCheck > 3) {
+  if (resetButton.click() && clickCheck > 2) {
     cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     selected = [false, false, false, false, false, false, false, false, false, false, false];
     i0 = 0;
@@ -144,13 +144,10 @@ function clickNtouch() {
     clickNext = 0;
     clickCheck = 3;
     cardNumber = 0;
-    modeOne = false;
-    modeTwo = false;
-    modeMulti = false;
-    modeManual = false;
     desCheck = 0;
+    scoreWidth = 0;
   }
-  if (shareButton.click() && clickCheck > 3) {
+  if (shareButton.click() && clickCheck > 2) {
     save('TarotResult'+'_'+year()+'_'+month()+'_'+day()+'_'+hour()+'_'+minute()+'_'+second()+'.png');
   }
   if (clickCheck > 2) {

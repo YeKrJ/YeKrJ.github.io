@@ -26,7 +26,7 @@ function resultPageOne() {
 }
 
 function resultPageTwo() {
-  if (rT > 50 && scoreWidth < tarotMScore[2][13]*1.3) {
+  if (rT > 50 && scoreWidth < tarotMScore[2][13]*1.35) {
     scoreWidth++;
   }
   fill(0);
@@ -57,7 +57,7 @@ function resultPageTwo() {
   } else {
     fill(10,150,220)
   }
-  textSize(12*wX);
+  textSize(11*wX);
   textFont(fontg);
   text(tarotMName[resultTwoNumber1], 55*wX, 262*wX);
   textAlign(RIGHT);
@@ -70,7 +70,7 @@ function resultPageTwo() {
     } else {
       fill(10,150,220)
     }
-  text(tarotMName[resultTwoNumber2], 335*wX, 262*wX);
+  text(tarotMName[resultTwoNumber2], 334*wX, 262*wX);
 
   fill(0);
   textSize(20*wX);
