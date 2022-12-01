@@ -16,13 +16,15 @@ class Button {
   over() {
     if(mouseX > this.x && mouseX < this.x+this.width && mouseY > this.y && mouseY < this.y+this.height) {
       this.img = this.imgA;
+      return true;
     } else {
       this.img = this.imgP;
+      return false;
     }
   }
   
   click() {
-    if(mouseX > this.x && mouseX < this.x+this.width && mouseY > this.y && mouseY < this.y+this.height) {
+    if(this.over()) {
       return true;
     }
   }

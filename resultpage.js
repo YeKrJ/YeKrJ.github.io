@@ -26,6 +26,9 @@ function resultPageOne() {
 }
 
 function resultPageTwo() {
+  if (rT > 50 && scoreWidth < tarotMScore[2][13]*1.3) {
+    scoreWidth++;
+  }
   fill(0);
   image(cardMBg[resultOneNumber], 0, 0, width, height);
   image(firstBar,128*wX,151*wX,137*wX,23*wX);
@@ -35,8 +38,8 @@ function resultPageTwo() {
   text('상대',215*wX,232*wX);
   textAlign(CENTER);
   textSize(15*wX);
-  text(tarotMScore[2][13],width/2,188*wX);
-  rect(128,165,100,7);
+  text(tarotMScore[2][13]+'%',width/2,188*wX);
+  rect(128*wX,165*wX,scoreWidth*wX,5*wX);
 
   image(cardM[resultTwoNumber1], 38*wX, 83*wX, 105*wX, 184*wX);
   image(cardM[resultTwoNumber2], 248*wX, 83*wX, 105*wX, 184*wX);
@@ -73,13 +76,13 @@ function resultPageTwo() {
   textSize(20*wX);
   textFont(fontg);
   textAlign(CENTER);
-  text(tarotMScriptSumm[2][13],width/2,318*wX);
+  text(tarotMScriptSumm[2][13],width/2,310*wX);
   textLeading(14*wX);
   textSize(9*wX);
   textAlign(LEFT);
   textFont(fontm);
   textWrap(WORD);
-  text(tarotMScript[2][13],48*wX,342*wX,295*wX, 160*wX);
+  text(tarotMScript[2][13],48*wX,337*wX,295*wX, 160*wX);
   image(twoResultMore,55*wX,497*wX,280*wX,80*wX);
   image(twoResultDefault,134*wX,504*wX,121*wX,60*wX);
 }

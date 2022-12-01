@@ -43,6 +43,13 @@ let rT = 0;
 
 let modeOne = false;
 let modeTwo = false;
+let modeMulti = false;
+let modeManual = false;
+
+let desCheck = 0;
+let aniCheck = 0;
+
+let scoreWidth = 0;
 
 function preload() {
   fontb = loadFont("assets/AppleSDGothicNeoB.ttf");
@@ -84,6 +91,9 @@ function preload() {
   startButtonP = loadImage("assets/ui/startButtonP.png");
   fontg = loadFont("assets/GmarketSansTTFBold.ttf");
   currentOne = loadImage("assets/ui/currentOneA.png");
+  currentTwo = loadImage("assets/ui/currentTwoA.png");
+  currentMulti = loadImage("assets/ui/currentMultiA.png");
+  currentManual = loadImage("assets/ui/currentManualA.png");
   for(i=0;i<22;i++) {
   cardM[i] = loadImage("assets/cards/cardMEX.png");
   cardMBg[i] = loadImage("assets/cards/cardbackMEX.png");
