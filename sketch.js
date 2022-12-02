@@ -24,7 +24,6 @@ function setup() {
 }
 
 function draw() {
-  print(desCheck);
   background(255);
   frameRate(30);
   if (clickCheck == 0) frontPage();

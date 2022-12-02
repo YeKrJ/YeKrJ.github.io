@@ -76,7 +76,7 @@ function resultPageTwo() {
 
   fill(0);
   textSize(11.5*wX);
-  textFont(fontgm);
+  textFont(fontg);
   textAlign(LEFT);
   text(tarotMOne[2], 57*wX, 298*wX, 129*wX, 34*wX);
   text(tarotMTwo[2], 57*wX, 338*wX, 129*wX, 34*wX);
@@ -143,8 +143,7 @@ function resultPageManual() {
     textFont(fontm);
     textWrap(WORD);
     text(tarotScript[13],73*wX,352*wX,250*wX,400*wX);
-  }
-  if (manualTwo) {
+  } else if (manualTwo) {
     image(manualDesTwo, 51*wX, 292*wX, 289*wX, 252*wX);
     tint(255, 20)
     image(cardJ[resultManualNumber2], 243*wX, 352*wX, 105*wX*0.8, 184*wX*0.8);
@@ -159,8 +158,7 @@ function resultPageManual() {
     textFont(fontm);
     textWrap(WORD);
     text(tarotScript[13],73*wX,352*wX,250*wX,400*wX);
-  }
-  if (manualThree) {
+  } else if (manualThree) {
     image(manualDesThree, 51*wX, 292*wX, 289*wX, 252*wX);
     tint(255, 20)
     image(cardJ[resultManualNumber3], 243*wX, 352*wX, 105*wX*0.8, 184*wX*0.8);
