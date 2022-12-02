@@ -64,11 +64,11 @@ let aniCheck = 0;
 let scoreWidth = 0;
 
 function preload() {
-  fontb = loadFont("assets/AppleSDGothicNeoB.ttf");
-  fontm = loadFont("assets/AppleSDGothicNeoM.ttf");
-  fontg = loadFont("assets/GmarketSansTTFBold.ttf");
-  fontgm = loadFont("assets/GmarketSansTTFMedium.ttf");
   if(windowWidth > 425) {
+    fontb = loadFont("assets/AppleSDGothicNeoB.ttf");
+    fontm = loadFont("assets/AppleSDGothicNeoM.ttf");
+    fontg = loadFont("assets/GmarketSansTTFBold.ttf");
+    fontgm = loadFont("assets/GmarketSansTTFMedium.ttf");
     interfaceTest = loadImage("interfacetest.png");
     for (i = 1; i < 12; i++) {
       cardImg[i] = loadImage("assets/cardEx.png");
@@ -146,6 +146,10 @@ function preload() {
     manualDesTwo = loadImage("assets/ui/manualDesTwo.png")
     manualDesThree = loadImage("assets/ui/manualDesThree.png")
   } else {
+    fontb = loadFont("assets/AppleSDGothicNeoB.ttf");
+    fontm = loadFont("assets/AppleSDGothicNeoM.ttf");
+    fontg = loadFont("assets/AppleSDGothicNeoB.ttf");
+    fontgm = loadFont("assets/AppleSDGothicNeoM.ttf");
     for (i = 1; i < 12; i++) {
       cardImg[i] = loadImage("assetsMobile/cardEx.png");
       cardImgA[i] = loadImage("assetsMobile/cardExA.png");
