@@ -3,7 +3,5 @@ html, body {
   padding: 0;
 }
 canvas {
-  width: 60%;
-  margin: auto;
   display: block;
 }
