@@ -96,4 +96,98 @@ function resultPageTwo() {
   text(tarotMScript[2][13],48*wX,437*wX, 295*wX, 45*wX);
   image(twoResultMore,55*wX,490*wX,280*wX,80*wX);
   image(twoResultDefault,134*wX,497*wX,121*wX,60*wX);
+<<<<<<< Updated upstream
 }
+=======
+}
+
+function resultPageManual() {
+  resultCheck = true;
+  image(cardJ[resultManualNumber1], 38*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
+  textAlign(CENTER);
+  textSize(13*wX);
+  text(tarotStar[13], 86*wX, 270*wX);
+  image(cardJ[resultManualNumber2], 147*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
+  text(tarotStar[13], 195*wX, 270*wX);
+  image(cardJ[resultManualNumber3], 256*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
+  text(tarotStar[13], 304*wX, 270*wX);
+  image(manualUI, 0, 0, width, height);
+  fill(0);
+  textSize(25*wX);
+  textFont(fontg);
+  textAlign(LEFT);
+  text(tarotName[resultManualNumber1], 108*wX, 328*wX);
+  text(tarotName[resultManualNumber2], 108*wX, 407*wX);
+  text(tarotName[resultManualNumber3], 108*wX, 486*wX);
+  textSize(20*wX);
+  fill(0, 15);
+  textAlign(RIGHT);
+  text(tarotEng[resultManualNumber1], 333*wX, 326*wX);
+  text(tarotEng[resultManualNumber2], 333*wX, 405*wX);
+  text(tarotEng[resultManualNumber3], 333*wX, 484*wX);
+  manualButton1.over();
+  manualButton1.display();
+  manualButton2.over();
+  manualButton2.display();
+  manualButton3.over();
+  manualButton3.display();
+  if (manualOne) {
+    image(manualDesOne, 51*wX, 292*wX, 289*wX, 252*wX);
+    tint(255, 20)
+    image(cardJ[resultManualNumber1], 243*wX, 352*wX, 105*wX*0.8, 184*wX*0.8);
+    tint(255, 255)
+    fill(0);
+    textSize(25*wX);
+    textFont(fontg);
+    textAlign(LEFT);
+    text(tarotName[resultManualNumber1], 71*wX, 330*wX);
+    textLeading(11*wX);
+    textSize(8*wX);
+    textFont(fontm);
+    textWrap(WORD);
+    text(tarotScript[13],73*wX,352*wX,250*wX,400*wX);
+  } else if (manualTwo) {
+    image(manualDesTwo, 51*wX, 292*wX, 289*wX, 252*wX);
+    tint(255, 20)
+    image(cardJ[resultManualNumber2], 243*wX, 352*wX, 105*wX*0.8, 184*wX*0.8);
+    tint(255, 255)
+    fill(0);
+    textSize(25*wX);
+    textFont(fontg);
+    textAlign(LEFT);
+    text(tarotName[resultManualNumber2], 71*wX, 330*wX);
+    textLeading(11*wX);
+    textSize(8*wX);
+    textFont(fontm);
+    textWrap(WORD);
+    text(tarotScript[13],73*wX,352*wX,250*wX,400*wX);
+  } else if (manualThree) {
+    image(manualDesThree, 51*wX, 292*wX, 289*wX, 252*wX);
+    tint(255, 20)
+    image(cardJ[resultManualNumber3], 243*wX, 352*wX, 105*wX*0.8, 184*wX*0.8);
+    tint(255, 255)
+    fill(0);
+    textSize(25*wX);
+    textFont(fontg);
+    textAlign(LEFT);
+    text(tarotName[resultManualNumber3], 71*wX, 330*wX);
+    textLeading(11*wX);
+    textSize(8*wX);
+    textFont(fontm);
+    textWrap(WORD);
+    text(tarotScript[13],73*wX,352*wX,250*wX,400*wX);
+  }
+  if (manualOne || manualTwo || manualThree) {
+    closeButton.over();
+    closeButton.display();
+  }
+ }
+
+ function multiInput() {
+  
+ }
+
+ function resultPageMulti() {
+
+ }
+>>>>>>> Stashed changes
