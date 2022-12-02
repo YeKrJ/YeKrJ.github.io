@@ -7,6 +7,10 @@ function setup() {
   arrayData.C();
   arrayData.PageIn();
   angleMode(DEGREES);
+  button1 = new Button (61, 240, 270, 48, oneButtonA, oneButtonP);
+  button2 = new Button (61, 327, 270, 48, twoButtonA, twoButtonP);
+  button3 = new Button (61, 414, 270, 48, multiButtonA, multiButtonP);
+  button4 = new Button (61, 502, 270, 48, manualButtonA, manualButtonP);
   buttonH = new Button (144, 595, 105, 25, homeButtonA, homeButtonP);
   buttonNextS = new Button (194, 469, 56, 60, nextButtonA, nextButtonP);
   buttonResetS = new Button (140, 469, 56, 60, shuffleResetA, shuffleResetP);

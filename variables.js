@@ -72,8 +72,6 @@ function preload() {
     cardImgA[i] = loadImage("assets/cardExA.png");
     cardImgS[i] = loadImage("assets/cardExS.png");
   }
-  fontb = loadFont("assets/AppleSDGothicNeoB.ttf");
-  fontm = loadFont("assets/AppleSDGothicNeoM.ttf");
   logo = loadImage("assets/ui/logo.png");
   oneButtonA = loadImage("assets/ui/oneButtonA.png");
   twoButtonA = loadImage("assets/ui/twoButtonA.png");
@@ -102,6 +100,7 @@ function preload() {
   startButtonA = loadImage("assets/ui/startButtonA.png");
   startButtonP = loadImage("assets/ui/startButtonP.png");
   fontg = loadFont("assets/GmarketSansTTFBold.ttf");
+  fontgm = loadFont("assets/GmarketSansTTFMedium.ttf");
   currentOne = loadImage("assets/ui/currentOneA.png");
   currentTwo = loadImage("assets/ui/currentTwoA.png");
   currentMulti = loadImage("assets/ui/currentMultiA.png");

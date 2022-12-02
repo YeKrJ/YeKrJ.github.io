@@ -76,7 +76,7 @@ function resultPageTwo() {
 
   fill(0);
   textSize(11.5*wX);
-  textFont(fontg);
+  textFont(fontgm);
   textAlign(LEFT);
   text(tarotMOne[2], 57*wX, 298*wX, 129*wX, 34*wX);
   text(tarotMTwo[2], 57*wX, 338*wX, 129*wX, 34*wX);
