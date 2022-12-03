@@ -1,5 +1,8 @@
 function resultPageOne() {
-  image(cardJBg[resultOneNumber], 0, 0, width, height);
+  tint(255, 15);
+  image(cardJ[resultOneNumber], 0, -250*wX, width, 619*wX);
+  tint(255, 255);
+  image(cardBackGradient, 0, 50*wX, width, 537*wX)
   image(yn[resultOneNumber], 53*wX, 197*wX, 77*wX, 33*wX);
   image(cardJ[resultOneNumber], 142*wX, 72*wX, 105*wX, 185*wX);
   image(oneResultBack, 52*wX, 222*wX, 279*wX, 70*wX);
@@ -30,7 +33,11 @@ function resultPageTwo() {
     scoreWidth++;
   }
   fill(0);
-  image(cardMBg[resultOneNumber], 0, 0, width, height);
+  tint(255, 15);
+  image(cardM[resultTwoNumber1], -width/2, -250*wX, width, 619*wX);
+  image(cardM[resultTwoNumber2], width/2, -250*wX, width, 619*wX);
+  tint(255, 255);
+  image(cardBackGradient, 0, 50*wX, width, 537*wX)
   image(firstBar,128*wX,151*wX,137*wX,23*wX);
   textSize(17*wX);
   textFont(fontg);

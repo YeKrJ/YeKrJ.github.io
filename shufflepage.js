@@ -35,6 +35,9 @@ function shufflePage() {
     }
   }
   if (clickCheck >= 3 && clickNext == 0) {
+    if (modeMulti) {
+      multiInputBox();
+    }
     push();
     translate(0, -20);
     for (n=1;n<12;n++) {
@@ -59,6 +62,7 @@ function shufflePage() {
     j0 = 0;
     i2 = 0;
     j2 = 0;
+
   } 
   if (clickNext > 0) {
     ir = 0;
@@ -198,7 +202,6 @@ function shuffleSelect() {
           cardNumber++;
         }
         }
-        print(cardNumber);
     } 
     if (modeManual) {
       if (cardNumber < 6) {
