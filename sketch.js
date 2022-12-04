@@ -24,6 +24,19 @@ function setup() {
   yn = [ynS,ynY,ynS,ynY,ynY,ynY,ynY,ynY,ynY,ynN,ynY,ynS,ynN,ynN,ynN,ynN,ynN,ynN,ynN,ynN,ynN];
   selected = [false, false, false, false, false, false, false, false, false, false, false];
   cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  inp = [];
+  inp[1] = new InputBar(width/2-100, 220, 50);
+  inp[2] = new InputBar(width/2-25, 220, 50);
+  inp[3] = new InputBar(width/2+50, 220, 50);
+  inp[4] = new InputBar(width/2-100, 260, 50);
+  inp[5] = new InputBar(width/2-25, 260, 50);
+  inp[6] = new InputBar(width/2+50, 260, 50);
+  inp[1].inp.hide();
+  inp[2].inp.hide();
+  inp[3].inp.hide();
+  inp[4].inp.hide();
+  inp[5].inp.hide();
+  inp[6].inp.hide();
 }
 
 function draw() {
@@ -113,6 +126,9 @@ function clickNtouch() {
     manualOne = false;
     manualTwo = false;
     manualThree = false;
+    for(let i=1; i<=6; i++) {
+      inp[i].inp.hide();
+    }
   }
   if (clickCheck > 1) {
   if (modeOne) {
@@ -161,6 +177,9 @@ function clickNtouch() {
     manualOne = false;
     manualTwo = false;
     manualThree = false;
+    for(let i=1; i<=6; i++) {
+      inp[i].inp.hide();
+    }
   }
   if (shareButton.click() && clickCheck > 2) {
     save('TarotResult'+'_'+year()+'_'+month()+'_'+day()+'_'+hour()+'_'+minute()+'_'+second()+'.png');

@@ -45,7 +45,7 @@ let selected = [];
 let cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let wX = 1.2;
 
-let multiInput = ['옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
+let multiInput = ['None', '옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
 let resultMultiNumber = [];
 
 let clickNext = 0;

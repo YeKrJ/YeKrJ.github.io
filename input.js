@@ -1,19 +1,28 @@
 class InputBar {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.result = 0;
+    constructor(x, y, s) {
+      this.x = x;
+      this.y = y;
+      this.size = s;
+      this.inp = createInput("옵션");
+      this.inp.position(this.x, this.y);
+      this.inp.size(this.size);
+      this.inp.input(this.myInputEvent);
+    }
+    
+    show() {
+     if (this.inp.elt.style.display == "none") {
+      this.inp.elt.value = "";
+      this.inp.show();
+     }
     }
 
-    display() {
-        this.input = createInput('옵션');
-        this.input.position(this.x*wX, this.y*wX)
-        this.input.size(100*wX, 20*wX)
+    value() {
+    return this.inp.elt.value;
     }
 
-    inputValue() {
-        this.result = this.input.value();
-        return this.result;
-    }
+    myInputEvent() {
+        // console.log("you are typing: ", this.value());
+      }
 }
+
 

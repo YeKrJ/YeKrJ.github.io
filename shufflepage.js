@@ -59,9 +59,14 @@ function shufflePage() {
     j0 = 0;
     i2 = 0;
     j2 = 0;
-
+    for(let i=1; i<=6; i++) {
+      inp[i].inp.show();
+    }
   } 
   if (clickNext > 0) {
+    for(let i=1; i<=6; i++) {
+      inp[i].inp.hide();
+    }
     ir = 0;
     j = 0;
     push();
@@ -196,7 +201,7 @@ function shuffleSelect() {
       }
     } 
     if (modeMulti) {
-      if (cardNumber < 21)
+      if (cardNumber < 20)
         for(i=1;i<12;i++) {
         cardClickPX[i] = (width/10*i)
         if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {

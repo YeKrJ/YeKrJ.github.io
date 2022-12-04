@@ -106,6 +106,9 @@ function resultPageTwo() {
 }
 
 function resultMulti() {
+  for(let i=1; i<=6; i++) {
+    multiInput[i] = inp[i].inp.value();
+  }
   resultCheck = true;
   //mN = multiNumber
   image(multiUp, 120*wX, 70*wX, 147*wX, 69*wX);
@@ -118,8 +121,8 @@ function resultMulti() {
     textAlign(CENTER);
     image(cardJ[resultMultiNumber[im]], (mN*im+(mN/2)-cardWidth/2), cardY, cardWidth, cardHeight);
     textFont(fontgm);
-    textSize(10*wX*multiScale[nT[cardNumber]]);
-    text(multiInput[im], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY-10*wX*multiScale[nT[cardNumber]]);
+    textSize(13*wX*multiScale[nT[cardNumber]]);
+    text(multiInput[im+1], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY-5*wX*multiScale[nT[cardNumber]]);
     textSize(20*wX*multiScale[nT[cardNumber]]);
     textFont(fontg);
     textLeading(25*wX*multiScale[nT[cardNumber]]);
