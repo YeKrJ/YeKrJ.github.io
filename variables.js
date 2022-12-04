@@ -76,11 +76,31 @@ function preload() {
     fontm = loadFont("assets/AppleSDGothicNeoM.ttf");
     fontg = loadFont("assets/GmarketSansTTFBold.ttf");
     fontgm = loadFont("assets/GmarketSansTTFMedium.ttf");
+    if (windowWidth > 480) {
     for (i = 1; i < 12; i++) {
       cardImg[i] = loadImage("assets/cardEx.png");
       cardImgA[i] = loadImage("assets/cardExA.png");
       cardImgS[i] = loadImage("assets/cardExS.png");
     }
+      for(i=0;i<22;i++) {
+        cardJ[i] = loadImage("assets/cards/cardMEX.png");
+      }
+      for(i=0;i<16;i++) {
+        cardM[i] = loadImage("assets/cards/cardMEX.png");
+      }
+  } else {
+    for (i = 1; i < 12; i++) {
+      cardImg[i] = loadImage("assetsMobile/cardEx.png");
+      cardImgA[i] = loadImage("assetsMobile/cardExA.png");
+      cardImgS[i] = loadImage("assetsMobile/cardExS.png");
+    }
+      for(i=0;i<22;i++) {
+        cardJ[i] = loadImage("assetsMobile/cards/cardMEX.png");
+      }
+      for(i=0;i<16;i++) {
+        cardM[i] = loadImage("assetsMobile/cards/cardMEX.png");
+      }
+  }
     logo = loadImage("assets/ui/logo.png");
     oneButtonA = loadImage("assets/ui/oneButtonA.png");
     twoButtonA = loadImage("assets/ui/twoButtonA.png");
@@ -112,12 +132,6 @@ function preload() {
     currentTwo = loadImage("assets/ui/currentTwoA.png");
     currentMulti = loadImage("assets/ui/currentMultiA.png");
     currentManual = loadImage("assets/ui/currentManualA.png");
-    for(i=0;i<22;i++) {
-      cardJ[i] = loadImage("assets/cards/cardMEX.png");
-    }
-    for(i=0;i<16;i++) {
-      cardM[i] = loadImage("assets/cards/cardMEX.png");
-    }
     ynY = loadImage("assets/ui/ynY.png");
     ynN = loadImage("assets/ui/ynN.png");
     ynS = loadImage("assets/ui/ynS.png");
