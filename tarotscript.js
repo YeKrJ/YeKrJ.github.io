@@ -1,4 +1,5 @@
 let tarotName = ['바보', '마법사', '여사제', '여제', '황제', '교황', '연인', '전차', '힘', '은둔자', '운명의 수레바퀴', '정의', '매달린 사람', '죽음', '절제', '악마', '탑', '별', '달', '태양', '심판', '세계'];
+let tarotMultiName = ['바보', '마법사', '여사제', '여제', '황제', '교황', '연인', '전차', '힘', '은둔자', '운명의\n수레바퀴', '정의', '매달린\n사람', '죽음', '절제', '악마', '탑', '별', '달', '태양', '심판', '세계'];
 let tarotEng = ['Fool', 'Magician', 'High Priestess', 'Empress', 'Emperor', 'Hierophant', 'Lovers', 'Chariot', 'Strength', 'Hermit', 'Wheel of Fortune', 'Justice', 'Hanged Man', 'Death', 'Temperance', 'Devil', 'Tower', 'Star', 'Moon', 'Sun', 'Judgement', 'World'];
 let tarotStar = [];
 let tarotScript = [];

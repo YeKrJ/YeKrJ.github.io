@@ -35,9 +35,6 @@ function shufflePage() {
     }
   }
   if (clickCheck >= 3 && clickNext == 0) {
-    if (modeMulti) {
-      multiInputBox();
-    }
     push();
     translate(0, -20);
     for (n=1;n<12;n++) {
@@ -104,7 +101,14 @@ function shufflePage() {
       }
     } 
     if (modeMulti) {
-      resultOneNumber = int(random(21.4))
+      for(let i = 0; i < nT[cardNumber]; i++) {
+        resultMultiNumber[i] = int(random(21.4));
+      }
+      for(let i = 1; i < nT[cardNumber]; i++) {
+        if (resultMultiNumber[i] == resultMultiNumber[i-1] || resultMultiNumber[i] == resultMultiNumber[i-2] || resultMultiNumber[i] == resultMultiNumber[i-3]) {
+          resultMultiNumber[i] = int(random(21.4));
+        }
+      }
     }
     if (modeManual) {
       resultManualNumber1 = int(random(21.4))
@@ -148,7 +152,7 @@ function shufflePage() {
         rT++;
         }
         translate(0,(posPage[rT]-330)*wX);
-        resultPageTwo();
+        resultMulti();
         pop();
         clickNext = 2;
       } else {

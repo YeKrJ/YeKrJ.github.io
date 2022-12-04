@@ -124,7 +124,7 @@ function clickNtouch() {
       clickNext++;
       }
   } else if (modeMulti) {
-    if (cardNumber > 6 && buttonNextS.click()) {
+    if (cardNumber > 2 && buttonNextS.click()) {
       clickNext++;
       }
   } else {
@@ -165,7 +165,7 @@ function clickNtouch() {
   if (shareButton.click() && clickCheck > 2) {
     save('TarotResult'+'_'+year()+'_'+month()+'_'+day()+'_'+hour()+'_'+minute()+'_'+second()+'.png');
   }
-  if (clickCheck > 2) {
+  if (clickCheck > 2 && resultCheck == false) {
   shuffleSelect();
   }
   if (resultCheck) {

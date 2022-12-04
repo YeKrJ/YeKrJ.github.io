@@ -45,7 +45,8 @@ let selected = [];
 let cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let wX = 1.2;
 
-let multiInput = [];
+let multiInput = ['옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
+let resultMultiNumber = [];
 
 let clickNext = 0;
 let rT = 0;
@@ -60,7 +61,10 @@ let manualOne = false;
 let manualTwo = false;
 let manualThree = false;
 
-let modeMultiCheck = false;
+let modeMultiResult = [];
+//nT = numberTranslate;
+let nT = [0, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6];
+let multiScale = [1, 1, 1, 1, 0.9, 0.8, 0.7];
 
 let desCheck = 0;
 let aniCheck = 0;
@@ -148,6 +152,8 @@ function preload() {
     manualDesTwo = loadImage("assets/ui/manualDesTwo.png")
     manualDesThree = loadImage("assets/ui/manualDesThree.png")
     cardBackGradient = loadImage("assets/ui/cardBackGradient.png")
+    multiUI = loadImage("assets/ui/multiUI.png")
+    multiUp = loadImage("assets/ui/multiUp.png")
 }
 
 

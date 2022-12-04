@@ -105,6 +105,35 @@ function resultPageTwo() {
   image(twoResultDefault,134*wX,497*wX,121*wX,60*wX);
 }
 
+function resultMulti() {
+  resultCheck = true;
+  //mN = multiNumber
+  image(multiUp, 120*wX, 70*wX, 147*wX, 69*wX);
+  image(multiUI, 25*wX, 395*wX, 335*wX, 177*wX);
+  let cardWidth = 105*wX*0.9*multiScale[nT[cardNumber]];
+  let cardHeight = 184*wX*0.9*multiScale[nT[cardNumber]];
+  let cardY = height/2-cardHeight+5*wX;
+  let mN = width/nT[cardNumber];
+  for(let im = 0; im < nT[cardNumber]; im++) {
+    textAlign(CENTER);
+    image(cardJ[resultMultiNumber[im]], (mN*im+(mN/2)-cardWidth/2), cardY, cardWidth, cardHeight);
+    textFont(fontgm);
+    textSize(10*wX*multiScale[nT[cardNumber]]);
+    text(multiInput[im], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY-10*wX*multiScale[nT[cardNumber]]);
+    textSize(20*wX*multiScale[nT[cardNumber]]);
+    textFont(fontg);
+    textLeading(25*wX*multiScale[nT[cardNumber]]);
+    text(tarotMultiName[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+20*wX*multiScale[nT[cardNumber]]);
+    textSize(11*wX*multiScale[nT[cardNumber]]);
+    textFont(fontm);
+    if (resultMultiNumber[im] != 10 && resultMultiNumber[im] != 12) {
+    text(tarotStar[13], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+40*wX*multiScale[nT[cardNumber]]);
+    } else {
+      text(tarotStar[13], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+65*wX*multiScale[nT[cardNumber]]);
+    }
+  }
+}
+
 function resultPageManual() {
   resultCheck = true;
   image(cardJ[resultManualNumber1], 38*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
