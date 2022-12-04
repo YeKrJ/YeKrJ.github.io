@@ -59,9 +59,13 @@ function shufflePage() {
     j0 = 0;
     i2 = 0;
     j2 = 0;
-    if (j > 70) {
+    if (j > 70 && modeMulti) {
     for(let i=1; i<=6; i++) {
       inp[i].inp.show();
+    }
+  } else {
+    for(let i=1; i<=6; i++) {
+      inp[i].inp.hide();
     }
   }
   } 

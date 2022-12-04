@@ -104,6 +104,7 @@ function clickNtouch() {
   clickCheck = 2;
   }
   if (buttonH.click() && clickCheck > 0) {
+    multiInput = ['None', '옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
     cardNumber = 0;
     desCheck = 0;
     clickCheck = 0;
@@ -151,6 +152,7 @@ function clickNtouch() {
 }
   
   if (buttonResetS.click() && cardNumber > 0) {
+    multiInput = ['None', '옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
     cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     selected = [false, false, false, false, false, false, false, false, false, false, false];
     clickNext = 0;
@@ -159,6 +161,7 @@ function clickNtouch() {
     rT = 0;
   }
   if (resetButton.click() && clickCheck > 2) {
+    multiInput = ['None', '옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
     cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     selected = [false, false, false, false, false, false, false, false, false, false, false];
     i0 = 0;

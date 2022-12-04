@@ -3,7 +3,8 @@ class InputBar {
       this.x = x;
       this.y = y;
       this.size = s;
-      this.inp = createInput("옵션");
+      this.initial = "옵션"
+      this.inp = createInput(this.initial);
       this.inp.position(this.x, this.y);
       this.inp.size(this.size);
       this.inp.input(this.myInputEvent);
