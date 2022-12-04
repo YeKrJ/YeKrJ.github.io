@@ -109,7 +109,7 @@ function resultMulti() {
   resultCheck = true;
   //mN = multiNumber
   image(multiUp, 120*wX, 70*wX, 147*wX, 69*wX);
-  image(multiUI, 25*wX, 395*wX, 335*wX, 177*wX);
+  image(multiUI, 25*wX, 407*wX, 335*wX, 165*wX);
   let cardWidth = 105*wX*0.9*multiScale[nT[cardNumber]];
   let cardHeight = 184*wX*0.9*multiScale[nT[cardNumber]];
   let cardY = height/2-cardHeight+5*wX;
