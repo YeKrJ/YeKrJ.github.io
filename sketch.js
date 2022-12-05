@@ -1,6 +1,7 @@
 function setup() {
   wX = windowHeight/660;
-  createCanvas(390*wX, 660*wX);
+  let cnv = createCanvas(390*wX, 660*wX);
+  let cnvRect = cnv.elt.getBoundingClientRect()
   arrayData = new ArrayData();
   arrayData.In();
   arrayData.Out();
@@ -25,14 +26,14 @@ function setup() {
   selected = [false, false, false, false, false, false, false, false, false, false, false];
   cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   inp = [];
-  inp[1] = new InputBar(width/2-100, 220, 50, 20, "옵션1");
-  inp[2] = new InputBar(width/2-25, 220, 50, 20, "옵션2");
-  inp[3] = new InputBar(width/2+50, 220, 50, 20, "옵션3");
-  inp[4] = new InputBar(width/2-100, 260, 50, 20, "옵션4");
-  inp[5] = new InputBar(width/2-25, 260, 50, 20, "옵션5");
-  inp[6] = new InputBar(width/2+50, 260, 50, 20, "옵션6");
-  inp[7] = new InputBar(width/2-50, 260, 50, 20, "본인");
-  inp[8] = new InputBar(width/2+50, 260, 50, 20, '상대');
+  inp[1] = new InputBar(cnvRect.x+105*wX, cnvRect.y+170*wX, 50, 20, "옵션1");
+  inp[2] = new InputBar(cnvRect.x+165*wX, cnvRect.y+170*wX, 50, 20, "옵션2");
+  inp[3] = new InputBar(cnvRect.x+225*wX, cnvRect.y+170*wX, 50, 20, "옵션3");
+  inp[4] = new InputBar(cnvRect.x+105*wX, cnvRect.y+210*wX, 50, 20, "옵션4");
+  inp[5] = new InputBar(cnvRect.x+165*wX, cnvRect.y+210*wX, 50, 20, "옵션5");
+  inp[6] = new InputBar(cnvRect.x+225*wX, cnvRect.y+210*wX, 50, 20, "옵션6");
+  inp[7] = new InputBar(cnvRect.x+140*wX, cnvRect.y+170*wX, 100, 20, "본인");
+  inp[8] = new InputBar(cnvRect.x+140*wX, cnvRect.y+210*wX, 100, 20, '상대');
   inp[1].inp.hide();
   inp[2].inp.hide();
   inp[3].inp.hide();

@@ -1,7 +1,7 @@
 class InputBar {
     constructor(x, y, s, h, name) {
-      this.x = x*wX;
-      this.y = y*wX-50;
+      this.x = x;
+      this.y = y;
       this.size = s*wX;
       this.height = h*wX;
       this.initial = name;
