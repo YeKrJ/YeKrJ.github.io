@@ -29,6 +29,8 @@ function resultPageOne() {
 }
 
 function resultPageTwo() {
+  twoInput[1] = inp[7].inp.value();
+  twoInput[2] = inp[8].inp.value();
   if (rT > 50 && scoreWidth < tarotMScore[resultTwoNumber1][resultTwoNumber2]*1.08) {
     scoreWidth++;
   }
@@ -41,8 +43,10 @@ function resultPageTwo() {
   image(firstBar,128*wX,151*wX,137*wX,23*wX);
   textSize(17*wX);
   textFont(fontg);
-  text('본인',147*wX,108*wX);
-  text('상대',215*wX,232*wX);
+  textAlign(LEFT);
+  text(twoInput[1],147*wX,105*wX);
+  textAlign(RIGHT);
+  text(twoInput[2],245*wX,229*wX);
   textAlign(CENTER);
   textSize(15*wX);
   text(tarotMScore[resultTwoNumber1][resultTwoNumber2]+'%',width/2,188*wX);

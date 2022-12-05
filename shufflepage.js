@@ -59,10 +59,15 @@ function shufflePage() {
     j0 = 0;
     i2 = 0;
     j2 = 0;
-    if (j > 70 && modeMulti) {
+    if (j > 70) {
+      if (modeMulti) {
     for(let i=1; i<=6; i++) {
       inp[i].inp.show();
     }
+  } if (modeTwo) {
+    inp[7].inp.show();
+    inp[8].inp.show();
+  }
   } else {
     for(let i=1; i<=6; i++) {
       inp[i].inp.hide();
@@ -70,7 +75,7 @@ function shufflePage() {
   }
   } 
   if (clickNext > 0) {
-    for(let i=1; i<=6; i++) {
+    for(let i=1; i<=8; i++) {
       inp[i].inp.hide();
     }
     ir = 0;
