@@ -21,7 +21,7 @@ function setup() {
   manualButton2 = new Button(173, 541, 45, 45, manualTwoButtonA, manualTwoButtonP);
   manualButton3 = new Button(220, 541, 45, 45, manualThreeButtonA, manualThreeButtonP);
   closeButton = new Button(312, 304, 16, 16, closeButtonA, closeButtonP);
-  yn = [ynS,ynY,ynS,ynY,ynY,ynY,ynY,ynY,ynY,ynN,ynY,ynS,ynN,ynN,ynN,ynN,ynN,ynN,ynN,ynN,ynN];
+  yn = [ynS,ynY,ynS,ynY,ynY,ynS,ynY,ynY,ynY,ynN,ynY,ynS,ynN,ynN,ynY,ynN,ynN,ynS,ynN,ynY,ynS,ynY];
   selected = [false, false, false, false, false, false, false, false, false, false, false];
   cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   inp = [];
