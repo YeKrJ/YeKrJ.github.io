@@ -82,11 +82,11 @@ function preload() {
       cardImgA[i] = loadImage("assets/cardExA.png");
       cardImgS[i] = loadImage("assets/cardExS.png");
     }
-      for(i=0;i<22;i++) {
-        cardJ[i] = loadImage("assets/cards/cardMEX.png");
+      for(let i=0;i<22;i++) {
+        cardJ[i] = loadImage("assets/cards/cardJ"+i+".png");
       }
-      for(i=0;i<16;i++) {
-        cardM[i] = loadImage("assets/cards/cardMEX.png");
+      for(let i=0;i<16;i++) {
+        cardM[i] = loadImage("assets/cards/cardM"+i+".png");
       }
   } else {
     for (i = 1; i < 12; i++) {
@@ -94,12 +94,12 @@ function preload() {
       cardImgA[i] = loadImage("assetsMobile/cardExA.png");
       cardImgS[i] = loadImage("assetsMobile/cardExS.png");
     }
-      for(i=0;i<22;i++) {
-        cardJ[i] = loadImage("assetsMobile/cards/cardMEX.png");
-      }
-      for(i=0;i<16;i++) {
-        cardM[i] = loadImage("assetsMobile/cards/cardMEX.png");
-      }
+    for(let i=0;i<22;i++) {
+      cardJ[i] = loadImage("assets/cards/cardJ"+i+".png");
+    }
+    for(let i=0;i<16;i++) {
+      cardM[i] = loadImage("assets/cards/cardM"+i+".png");
+    }
   }
     logo = loadImage("assets/ui/logo.png");
     oneButtonA = loadImage("assets/ui/oneButtonA.png");
