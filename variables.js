@@ -169,6 +169,8 @@ function preload() {
     cardBackGradient = loadImage("assets/ui/cardBackGradient.png")
     multiUI = loadImage("assets/ui/multiUI.png")
     multiUp = loadImage("assets/ui/multiUp.png")
+    twoInputUI = loadImage("assets/ui/twoInputUI.png")
+    multiInputUI = loadImage("assets/ui/multiInputUI.png");
 }
 
 
