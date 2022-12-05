@@ -131,7 +131,7 @@ function resultMulti() {
     image(cardJ[resultMultiNumber[im]], (mN*im+(mN/2)-cardWidth/2), cardY, cardWidth, cardHeight);
     textFont(fontgm);
     textSize(13*wX*multiScale[nT[cardNumber]]);
-    text(multiInput[im+1], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY-5*wX*multiScale[nT[cardNumber]]);
+    text(multiInput[im+1], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY-8*wX*multiScale[nT[cardNumber]]);
     textSize(20*wX*multiScale[nT[cardNumber]]);
     textFont(fontg);
     textLeading(25*wX*multiScale[nT[cardNumber]]);
