@@ -115,6 +115,11 @@ function resultMulti() {
   }
   resultCheck = true;
   //mN = multiNumber
+  tint(255, 30);
+  image(cardJ[resultMultiNumber[0]], -width/2, -250*wX, width, 619*wX);
+  image(cardJ[resultMultiNumber[1]], width/2, -250*wX, width, 619*wX);
+  tint(255, 255);
+  image(cardBackGradient, 0, 50*wX, width, 537*wX);
   image(multiUp, 120*wX, 70*wX, 147*wX, 69*wX);
   image(multiUI, 25*wX, 407*wX, 335*wX, 165*wX);
   let cardWidth = 105*wX*0.9*multiScale[nT[cardNumber]];
@@ -143,6 +148,11 @@ function resultMulti() {
 
 function resultPageManual() {
   resultCheck = true;
+  tint(255, 30);
+  image(cardJ[resultManualNumber1], -width/2, -250*wX, width, 619*wX);
+  image(cardJ[resultManualNumber3], width/2, -250*wX, width, 619*wX);
+  tint(255, 255);
+  image(cardBackGradient, 0, 50*wX, width, 537*wX);
   image(cardJ[resultManualNumber1], 38*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
   textAlign(CENTER);
   textSize(13*wX);
