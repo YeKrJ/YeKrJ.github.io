@@ -64,11 +64,11 @@ function shufflePage() {
     for(let i=1; i<=6; i++) {
       inp[i].inp.show();
     }
-    image(multiInputUI, 0, -20, width, height+3);
+    image(multiInputUI, -1, -20, width+3, height+4);
   } if (modeTwo) {
     inp[7].inp.show();
     inp[8].inp.show();
-    image(twoInputUI, 0, -20, width, height+3);
+    image(twoInputUI, -1, -20, width+1, height+4);
   }
   } else {
     for(let i=1; i<=6; i++) {
