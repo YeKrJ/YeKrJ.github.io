@@ -116,7 +116,7 @@ function shufflePage() {
         resultMultiNumber[i] = int(random(21.4));
       }
       for(let i = 1; i < nT[cardNumber]; i++) {
-        if (resultMultiNumber[i] == resultMultiNumber[i-1] || resultMultiNumber[i] == resultMultiNumber[i-2] || resultMultiNumber[i] == resultMultiNumber[i-3]) {
+        if (resultMultiNumber[i] == resultMultiNumber[i-1] || resultMultiNumber[i] == resultMultiNumber[i-2] || resultMultiNumber[i] == resultMultiNumber[i-3] || resultMultiNumber[i] == resultMultiNumber[i-4] || resultMultiNumber[i] == resultMultiNumber[i-5]) {
           resultMultiNumber[i] = int(random(21.4));
         }
       }

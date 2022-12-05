@@ -25,12 +25,12 @@ function setup() {
   selected = [false, false, false, false, false, false, false, false, false, false, false];
   cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   inp = [];
-  inp[1] = new InputBar(width/2-100, 220, 50);
-  inp[2] = new InputBar(width/2-25, 220, 50);
-  inp[3] = new InputBar(width/2+50, 220, 50);
-  inp[4] = new InputBar(width/2-100, 260, 50);
-  inp[5] = new InputBar(width/2-25, 260, 50);
-  inp[6] = new InputBar(width/2+50, 260, 50);
+  inp[1] = new InputBar(width/2-100, 220, 50, 20);
+  inp[2] = new InputBar(width/2-25, 220, 50, 20);
+  inp[3] = new InputBar(width/2+50, 220, 50, 20);
+  inp[4] = new InputBar(width/2-100, 260, 50, 20);
+  inp[5] = new InputBar(width/2-25, 260, 50, 20);
+  inp[6] = new InputBar(width/2+50, 260, 50, 20);
   inp[1].inp.hide();
   inp[2].inp.hide();
   inp[3].inp.hide();

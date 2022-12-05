@@ -149,7 +149,7 @@ function preload() {
     twoResultLove = loadImage("assets/ui/twoResultLove.png");
     twoResultDefault = loadImage("assets/ui/twoResultDefault.png");
     twoResultFriend = loadImage("assets/ui/twoResultFriend.png");
-    twoResultLove = loadImage("assets/ui/twoResultWar.png");
+    twoResultWar = loadImage("assets/ui/twoResultWar.png");
     twoResultWork = loadImage("assets/ui/twoResultWork.png");
     twoDesMe = loadImage("assets/ui/twoDesMe.png");
     twoDesYou = loadImage("assets/ui/twoDesYou.png");
