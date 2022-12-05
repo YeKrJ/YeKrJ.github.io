@@ -64,8 +64,8 @@ function shufflePage() {
     for(let i=1; i<=6; i++) {
       noStroke()
       fill(120);
-      rect(104*wX, 151.5*wX, 180*wX, 29.5*wX, 2*wX);
-      rect(104*wX, 191.5*wX, 180*wX, 29.5*wX, 2*wX);
+      rect(104*wX, 151*wX, 180*wX, 29.5*wX, 2*wX);
+      rect(104*wX, 191*wX, 180*wX, 29.5*wX, 2*wX);
       textFont(fontgm, 8*wX);
       textAlign(CENTER);
       text("순서대로 옵션을 입력하세요", 193*wX, 142*wX);
@@ -76,8 +76,8 @@ function shufflePage() {
   } if (modeTwo) {
     noStroke()
     fill(120);
-    rect(139*wX, 151.5*wX, 111*wX, 29.5*wX, 2*wX);
-    rect(139*wX, 191.5*wX, 111*wX, 29.5*wX, 2*wX);
+    rect(139*wX, 151*wX, 111*wX, 29.5*wX, 2*wX);
+    rect(139*wX, 191*wX, 111*wX, 29.5*wX, 2*wX);
     textFont(fontgm, 8*wX);
     textAlign(CENTER);
     text("이름을 입력하세요", 193*wX, 142*wX);
