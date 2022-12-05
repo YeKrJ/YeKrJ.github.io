@@ -198,8 +198,8 @@ function minorScript() {
   tarotMTwo[3] = "의지를 가지면 실행에 옮기는 사람";
 
   //4번 마이너
-  tarotMOne[4] = "나의 욕구를 1순위로 두는 사람";
-  tarotMTwo[4] = "미성숙하지만, 현실적인 사람"
+  tarotMOne[4] = "나의 욕구를\n 1순위로 두는 사람";
+  tarotMTwo[4] = "미성숙하지만,\n 현실적인 사람"
 
   //5번 마이너
   tarotMOne[5] = "천천히 계획을 세우는 사람";
@@ -214,8 +214,8 @@ function minorScript() {
   tarotMTwo[7] = "계산적이고 수지타산을 따지는 사람"
 
   //8번 마이너
-  tarotMOne[8] = "미성숙하여 불안한 소년";
-  tarotMTwo[8] = "어디로 튈지 모르는 사람";
+  tarotMOne[8] = "미성숙하여 불안하고 예측 불가능한 소년";
+  tarotMTwo[8] = "어디로 튈지 모르는, 위험한 사람";
 
   //9번 마이너
   tarotMOne[9] = "재빠르게 실행하는 사람";
