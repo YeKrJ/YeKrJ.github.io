@@ -89,11 +89,11 @@ function resultPageTwo() {
   textSize(11.5*wX);
   textFont(fontgm);
   textAlign(LEFT);
-  text(tarotMOne[2], 57*wX, 298*wX, 129*wX, 34*wX);
-  text(tarotMTwo[2], 57*wX, 338*wX, 129*wX, 34*wX);
+  text(tarotMOne[resultTwoNumber1], 57*wX, 298*wX, 129*wX, 34*wX);
+  text(tarotMTwo[resultTwoNumber1], 57*wX, 338*wX, 129*wX, 34*wX);
   textAlign(RIGHT);
-  text(tarotMOne[15], 206*wX, 298*wX, 129*wX, 34*wX);
-  text(tarotMTwo[15], 206*wX, 338*wX, 129*wX, 34*wX);
+  text(tarotMOne[resultTwoNumber2], 206*wX, 298*wX, 129*wX, 34*wX);
+  text(tarotMTwo[resultTwoNumber2], 206*wX, 338*wX, 129*wX, 34*wX);
 
   textSize(18*wX);
   textFont(fontg);
