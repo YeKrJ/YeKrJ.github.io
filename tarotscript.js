@@ -191,7 +191,7 @@ function minorScript() {
 
   //2번 마이너
   tarotMOne[2] = "강인함 속 따뜻함을 가진 사람";
-  tarotMTwo[2] = "시원시원히지만, 사려깊은 사람";
+  tarotMTwo[2] = "시원시원하지만, 사려깊은 사람";
 
   //3번 마이너
   tarotMOne[3] = "뜨거운 열정을 잘 조절하는 사람";
