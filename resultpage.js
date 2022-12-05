@@ -1,5 +1,5 @@
 function resultPageOne() {
-  tint(255, 15);
+  tint(255, 30);
   image(cardJ[resultOneNumber], 0, -250*wX, width, 619*wX);
   tint(255, 255);
   image(cardBackGradient, 0, 50*wX, width, 537*wX)
@@ -35,7 +35,7 @@ function resultPageTwo() {
     scoreWidth++;
   }
   fill(0);
-  tint(255, 15);
+  tint(255, 30);
   image(cardM[resultTwoNumber1], -width/2, -250*wX, width, 619*wX);
   image(cardM[resultTwoNumber2], width/2, -250*wX, width, 619*wX);
   tint(255, 255);
