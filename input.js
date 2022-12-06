@@ -15,7 +15,7 @@ class InputBar {
      if (this.inp.elt.style.display == "none") {
       this.inp.elt.value = "";
       this.inp.show();
-     }
+     } 
     }
 
     value() {
