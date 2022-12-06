@@ -8,7 +8,7 @@ let tarotMoney = [];
 let tarotStudy = [];
 let tarotBus = [];
 
-let tarotMName = ['Page of Wands', 'Knight of Wands', 'Queen of Wands', 'King of Wands', 'Page of Pentacles', 'Knight of Pentacles', 'Queen of Pentacles', 'King of Pentacles', 'Page of Swords', 'Knight of Swords', 'Queen of Swords', 'King of Swords', 'Page of Cups', 'Knight of Cups', 'Queen of Cups', 'King of Pentacles'];
+let tarotMName = ['Page of Wands', 'Knight of Wands', 'Queen of Wands', 'King of Wands', 'Page of Pentacles', 'Knight of Pentacles', 'Queen of Pentacles', 'King of Pentacles', 'Page of Swords', 'Knight of Swords', 'Queen of Swords', 'King of Swords', 'Page of Cups', 'Knight of Cups', 'Queen of Cups', 'King of Cups'];
 let tarotMOne = [];
 let tarotMTwo = [];
 let tarotMScript = [];
