@@ -7,7 +7,6 @@ function shufflePage() {
     for (n=1;n<12;n++) {
     rot[n] = rotOut[n];
     pos[n] = posC[n];
-    cards[n] = new Card(cardImg[n], cardImgA[n], cardImgS[n]);
     cards[n].move(rot[n], pos[n], 0, 0);
     }
     pop();
@@ -52,8 +51,8 @@ function shufflePage() {
     pop()
     for(n2=1;n2<12;n2++) {
       if (selected[n2] == true) {
-        cards[n2+2].click();
-      }
+        cards[n2].click();
+      } 
     }
     i0 = 0;
     j0 = 0;
@@ -61,10 +60,10 @@ function shufflePage() {
     j2 = 0;
     if (j > 70) {
       if (modeMulti) {
-    for(let i=1; i<=6; i++) {
-      inp[i].inp.show();
-    }
-    image(multiInputUI, -1, -20, width+3, height+4);
+        for(let i=1; i<=6; i++) {
+          inp[i].inp.show();
+        }
+      image(multiInputUI, -1, -20, width+3, height+4);
   } if (modeTwo) {
     inp[7].inp.show();
     inp[8].inp.show();
@@ -73,6 +72,11 @@ function shufflePage() {
   } else {
     for(let i=1; i<=6; i++) {
       inp[i].inp.hide();
+    }
+  }
+  for(let i=1;i<12;i++) {
+    if (selected[i]) {
+      cardNumber = selected.filter(element => true === element).length;
     }
   }
   } 
@@ -157,52 +161,59 @@ function shuffleSelect() {
     if (modeOne) {
       if (cardNumber < 1) {
         for(i=1;i<12;i++) {
-        cardClickPX[i] = (width/10*i)
-        if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
+        if (cards[i].ig == cards[i].igA) {
           selected[i] = true;
         } 
-        if (selected[i]) {
-          cardNumber++;
-        }
+        
         }
       }
+      for(i=1;i<12;i++) {
+        if (cards[i].ig == cards[i].igS && mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
+          selected[i] = false;
+          cardNumber = 0;
+        }
+        }
     } 
     if (modeTwo) {
-      if (cardNumber < 3) {
+      if (cardNumber < 2) {
         for(i=1;i<12;i++) {
-        cardClickPX[i] = (width/10*i)
-        if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
+        if (cards[i].ig == cards[i].igA) {
           selected[i] = true;
         } 
-        if (selected[i]) {
-          cardNumber++;
-        }
         }
       }
+      for(i=1;i<12;i++) {
+        if (cards[i].ig == cards[i].igS && mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
+          selected[i] = false;
+        }
+        }
     } 
     if (modeMulti) {
-      if (cardNumber < 20)
-        for(i=1;i<12;i++) {
-        cardClickPX[i] = (width/10*i)
-        if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
-          selected[i] = true;
-        }
-        if (selected[i]) {
-          cardNumber++;
-        }
-        }
-    } 
-    if (modeManual) {
       if (cardNumber < 6) {
         for(i=1;i<12;i++) {
-        cardClickPX[i] = (width/10*i)
-        if (mouseX > cardClickPX[i] && mouseX < cardClickPX[i]+40*wX && mouseY > 276*wX && mouseY < (276+150)*wX) {
+        if (cards[i].ig == cards[i].igA) {
           selected[i] = true;
-        } 
-        if (selected[i]) {
-          cardNumber++;
         }
         }
       }
+      for(i=1;i<12;i++) {
+        if (cards[i].ig == cards[i].igS && mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
+          selected[i] = false;
+        }
+        }   
+    } 
+    if (modeManual) {
+      if (cardNumber < 3) {
+        for(i=1;i<12;i++) {
+        if (cards[i].ig == cards[i].igA) {
+          selected[i] = true;
+        }
+        }
+      }
+      for(i=1;i<12;i++) {
+        if (cards[i].ig == cards[i].igS && mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
+          selected[i] = false;
+        }
+        }
     }
 }

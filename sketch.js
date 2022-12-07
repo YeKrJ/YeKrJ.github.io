@@ -42,6 +42,9 @@ function setup() {
   inp[6].inp.hide();
   inp[7].inp.hide();
   inp[8].inp.hide();
+  for (n=1;n<12;n++) {
+    cards[n] = new Card(cardImg[n], cardImgA[n], cardImgS[n]);
+  }
 }
 
 function draw() {
@@ -109,6 +112,9 @@ function clickNtouch() {
   clickCheck = 2;
   }
   if (buttonH.click() && clickCheck > 0) {
+    for(let ire=1;ire<12;ire++) {
+      cards[ire].reset();
+    }
     resultRandom();
     multiInput = ['None', '옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
     twoInput = ['None', '본인', '상대'];
@@ -144,21 +150,24 @@ function clickNtouch() {
       clickNext++;
       }
   } else if (modeTwo) {
-    if (cardNumber > 2 && buttonNextS.click()) {
+    if (cardNumber > 1 && buttonNextS.click()) {
       clickNext++;
       }
   } else if (modeMulti) {
-    if (cardNumber > 2 && buttonNextS.click()) {
+    if (cardNumber > 1 && buttonNextS.click()) {
       clickNext++;
       }
   } else {
-    if (cardNumber > 3 && buttonNextS.click()) {
+    if (cardNumber > 2 && buttonNextS.click()) {
       clickNext++;
       }
   }
 }
   
   if (buttonResetS.click() && cardNumber > 0) {
+    for(let ire=1;ire<12;ire++) {
+      cards[ire].reset();
+    }
     resultRandom();
     multiInput = ['None', '옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
     twoInput = ['None', '본인', '상대'];
@@ -170,6 +179,9 @@ function clickNtouch() {
     rT = 0;
   }
   if (resetButton.click() && clickCheck > 2) {
+    for(let ire=1;ire<12;ire++) {
+      cards[ire].reset();
+    }
     resultRandom();
     multiInput = ['None', '옵션1', '옵션2', '옵션3', '옵션4', '옵션5', '옵션6'];
     twoInput = ['None', '본인', '상대'];

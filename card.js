@@ -27,7 +27,7 @@ class Card {
   
   over(pos, j) {
     this.x += pos[j];
-    this.y += pos[j+1]
+    this.y += pos[j+1];
     if (mouseX > this.x*wX && mouseX < (this.x+this.width/2)*wX && mouseY > this.y*wX && mouseY < (this.y+this.height)*wX) {
       this.ig = this.igA;
     } else {
@@ -37,5 +37,9 @@ class Card {
   
   click() {
       this.ig = this.igS;
+  }
+
+  reset() {
+    this.ig = this.igD;
   }
 }

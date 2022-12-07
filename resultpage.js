@@ -122,26 +122,26 @@ function resultMulti() {
   image(cardBackGradient, 0, 50*wX, width, 537*wX);
   image(multiUp, 120*wX, 70*wX, 147*wX, 69*wX);
   image(multiUI, 25*wX, 407*wX, 335*wX, 165*wX);
-  let cardWidth = 105*wX*0.9*multiScale[nT[cardNumber]];
-  let cardHeight = 184*wX*0.9*multiScale[nT[cardNumber]];
+  let cardWidth = 105*wX*0.9*multiScale[cardNumber];
+  let cardHeight = 184*wX*0.9*multiScale[cardNumber];
   let cardY = height/2-cardHeight+5*wX;
-  let mN = width/nT[cardNumber];
-  for(let im = 0; im < nT[cardNumber]; im++) {
+  let mN = width/cardNumber;
+  for(let im = 0; im < cardNumber; im++) {
     textAlign(CENTER);
     image(cardJ[resultMultiNumber[im]], (mN*im+(mN/2)-cardWidth/2), cardY, cardWidth, cardHeight);
     textFont(fontgm);
-    textSize(13*wX*multiScale[nT[cardNumber]]);
-    text(multiInput[im+1], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY-8*wX*multiScale[nT[cardNumber]]);
-    textSize(20*wX*multiScale[nT[cardNumber]]);
+    textSize(13*wX*multiScale[cardNumber]);
+    text(multiInput[im+1], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY-8*wX*multiScale[cardNumber]);
+    textSize(20*wX*multiScale[cardNumber]);
     textFont(fontg);
-    textLeading(25*wX*multiScale[nT[cardNumber]]);
-    text(tarotMultiName[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+20*wX*multiScale[nT[cardNumber]]);
-    textSize(11*wX*multiScale[nT[cardNumber]]);
+    textLeading(25*wX*multiScale[cardNumber]);
+    text(tarotMultiName[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+20*wX*multiScale[cardNumber]);
+    textSize(11*wX*multiScale[cardNumber]);
     textFont(fontm);
     if (resultMultiNumber[im] != 10 && resultMultiNumber[im] != 12) {
-    text(tarotStar[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+40*wX*multiScale[nT[cardNumber]]);
+    text(tarotStar[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+40*wX*multiScale[cardNumber]);
     } else {
-      text(tarotStar[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+65*wX*multiScale[nT[cardNumber]]);
+      text(tarotStar[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+65*wX*multiScale[cardNumber]);
     }
   }
 }
