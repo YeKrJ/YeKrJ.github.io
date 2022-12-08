@@ -239,8 +239,12 @@ function clickNtouch() {
 
 function mousePressed() {
   clickNtouch();
+  touchCheck = false;
+  mouseCheck = true;
 }
 
 function touchStarted() {
   clickNtouch();
+  touchCheck = true;
+  mouseCheck = false;
 }

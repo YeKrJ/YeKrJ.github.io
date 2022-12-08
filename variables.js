@@ -70,6 +70,9 @@ let aniCheck = 0;
 
 let scoreWidth = 0;
 
+let touchCheck = false;
+let mouseCheck = false;
+
 function preload() {
     fontb = loadFont("assets/AppleSDGothicNeoB.ttf");
     fontm = loadFont("assets/AppleSDGothicNeoM.ttf");

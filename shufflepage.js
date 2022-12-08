@@ -40,7 +40,7 @@ function shufflePage() {
       rot[n] = rotIn[n];
       pos[n] = posIn[n];
       cards[n].move(rot[n], pos[n], ir, j);
-      cards[n].over(pos[n], j);
+      if (mouseCheck) cards[n].over(pos[n], j);
     }
     if (ir < 29) {
       ir++
@@ -103,12 +103,16 @@ function shufflePage() {
   }
   pop();
   if (clickCheck >= 1) {
-    buttonH.over();
+    if (mouseCheck) {
+      buttonH.over();
+    }
     buttonH.display();
   }
   if (clickCheck > 1 && clickNext == 0) {
+    if (mouseCheck) {
     buttonNextS.over();
     buttonResetS.over();
+    }
     buttonNextS.display();
     buttonResetS.display();
   }
@@ -161,25 +165,41 @@ function shuffleSelect() {
     if (modeOne) {
       if (cardNumber < 1) {
         for(i=1;i<12;i++) {
+          if (mouseCheck) {
         if (cards[i].ig == cards[i].igA) {
           selected[i] = true;
-        } 
-        
+        }
+      }
+      if (touchCheck) {
+        if (mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
+          selected[i] = !selected[i];
+        }
+      } 
+
         }
       }
       for(i=1;i<12;i++) {
+        if (mouseCheck) {
         if (cards[i].ig == cards[i].igS && mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
           selected[i] = false;
           cardNumber = 0;
         }
+      }
         }
     } 
     if (modeTwo) {
       if (cardNumber < 2) {
         for(i=1;i<12;i++) {
+        if (mouseCheck) {
         if (cards[i].ig == cards[i].igA) {
           selected[i] = true;
-        } 
+        }
+      }
+      if (touchCheck) {
+        if (mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
+          selected[i] = !selected[i];
+        }
+      } 
         }
       }
       for(i=1;i<12;i++) {
@@ -191,9 +211,16 @@ function shuffleSelect() {
     if (modeMulti) {
       if (cardNumber < 6) {
         for(i=1;i<12;i++) {
+          if (mouseCheck) {
         if (cards[i].ig == cards[i].igA) {
           selected[i] = true;
         }
+      }
+      if (touchCheck) {
+        if (mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
+          selected[i] = !selected[i];
+        }
+      }
         }
       }
       for(i=1;i<12;i++) {
@@ -205,9 +232,16 @@ function shuffleSelect() {
     if (modeManual) {
       if (cardNumber < 3) {
         for(i=1;i<12;i++) {
+          if (mouseCheck) {
         if (cards[i].ig == cards[i].igA) {
           selected[i] = true;
         }
+      }
+      if (touchCheck) {
+        if (mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
+          selected[i] = !selected[i];
+        }
+      }
         }
       }
       for(i=1;i<12;i++) {
