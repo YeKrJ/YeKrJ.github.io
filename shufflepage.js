@@ -63,6 +63,9 @@ function shufflePage() {
         for(let i=1; i<=cardNumber; i++) {
           inp[i].show();
         }
+        for(let i=cardNumber+1; i<=7; i++) {
+          inp[i].inp.hide();
+        }
       image(multiInputUI, -1, -20, width+3, height+4);
   } if (modeTwo) {
     inp[7].show();
