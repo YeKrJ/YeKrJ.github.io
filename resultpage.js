@@ -175,11 +175,11 @@ function resultPageManual() {
   text(tarotEng[resultManualNumber1], 333*wX, 326*wX);
   text(tarotEng[resultManualNumber2], 333*wX, 405*wX);
   text(tarotEng[resultManualNumber3], 333*wX, 484*wX);
-  manualButton1.over();
+  if (mouseCheck) manualButton1.over();
   manualButton1.display();
-  manualButton2.over();
+  if (mouseCheck) manualButton2.over();
   manualButton2.display();
-  manualButton3.over();
+  if (mouseCheck) manualButton3.over();
   manualButton3.display();
   if (manualOne) {
     image(manualDesOne, 51*wX, 292*wX, 289*wX, 252*wX);
@@ -228,7 +228,7 @@ function resultPageManual() {
     text(tarotScript[resultManualNumber3],73*wX,352*wX,250*wX,400*wX);
   }
   if (manualOne || manualTwo || manualThree) {
-    closeButton.over();
+    if (mouseCheck) closeButton.over();
     closeButton.display();
   }
  }

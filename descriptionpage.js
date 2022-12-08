@@ -8,7 +8,7 @@ function description(i){
   }
   image(caution,59*wX,335*wX,265*wX,136*wX);
   image(startDes,47*wX,505*wX,297*wX,11*wX);
-  nextButtonDes.over();
+  if (mouseCheck) nextButtonDes.over();
   nextButtonDes.display();
   if (desCheck < 10) {
   desCheck++;

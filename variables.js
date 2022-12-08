@@ -41,7 +41,7 @@ let cardJBg = [];
 let modeLogo = [];
 let modeDes = [];
 
-let selected = [];
+let selected = [false, false, false, false, false, false, false, false, false, false, false];
 let cardSelected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let wX = 1.2;
 

@@ -60,9 +60,13 @@ function shufflePage() {
     j2 = 0;
     if (j > 70) {
       if (modeMulti) {
-        for(let i=1; i<=6; i++) {
+        let cardInp = 0;
+        if (cardNumber >= cardInp) {
+          cardInp = cardNumber;
+          for(let i=1; i<=cardInp; i++) {
           inp[i].inp.show();
         }
+      }
       image(multiInputUI, -1, -20, width+3, height+4);
   } if (modeTwo) {
     inp[7].inp.show();
@@ -172,7 +176,7 @@ function shuffleSelect() {
       }
       if (touchCheck) {
         if (mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
-          selected[i] = !selected[i];
+          selected[i] = true;
         }
       } 
 
@@ -197,14 +201,14 @@ function shuffleSelect() {
       }
       if (touchCheck) {
         if (mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
-          selected[i] = !selected[i];
+          selected[i] = true;
         }
       } 
         }
       }
       for(i=1;i<12;i++) {
         if (cards[i].ig == cards[i].igS && mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
-          selected[i] = false;
+          selected[i] = true;
         }
         }
     } 
@@ -218,7 +222,7 @@ function shuffleSelect() {
       }
       if (touchCheck) {
         if (mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
-          selected[i] = !selected[i];
+          selected[i] = true;
         }
       }
         }
@@ -239,7 +243,7 @@ function shuffleSelect() {
       }
       if (touchCheck) {
         if (mouseX > cards[i].x*wX && mouseX < (cards[i].x+cards[i].width/2)*wX && mouseY > cards[i].y*wX && mouseY < (cards[i].y+cards[i].height)*wX) {
-          selected[i] = !selected[i];
+          selected[i] = true;
         }
       }
         }

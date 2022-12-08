@@ -72,9 +72,9 @@ function draw() {
     else if (modeManual) image(currentManual, 139*wX, 37*wX, 109*wX, 26*wX);
   }
   if (clickNext > 0) {
-    resetButton.over();
+    if (mouseCheck) resetButton.over();
     resetButton.display();
-    shareButton.over();
+    if (mouseCheck) shareButton.over();
     shareButton.display();
   }
 }
@@ -177,6 +177,9 @@ function clickNtouch() {
     clickCheck = 3;
     cardNumber = 0;
     rT = 0;
+    for(let i=1; i<=6; i++) {
+      inp[i].inp.hide();
+    }
   }
   if (resetButton.click() && clickCheck > 2) {
     for(let ire=1;ire<12;ire++) {
