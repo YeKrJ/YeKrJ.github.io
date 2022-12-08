@@ -5,10 +5,11 @@ class InputBar {
       this.size = s*wX;
       this.height = h*wX;
       this.initial = name;
-      this.inp = createInput(this.initial);
+      this.inp = createInput('');
       this.inp.position(this.x, this.y);
       this.inp.size(this.size, this.height);
       this.inp.input(this.myInputEvent);
+      this.inp.elt.setAttribute('placeholder', this.initial);
     }
     
     show() {

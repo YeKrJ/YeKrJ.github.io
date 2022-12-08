@@ -240,13 +240,13 @@ function clickNtouch() {
   }
 }
 
-function mousePressed() {
+function mouseReleased() {
   clickNtouch();
   touchCheck = false;
   mouseCheck = true;
 }
 
-function touchStarted() {
+function touchEnded() {
   clickNtouch();
   touchCheck = true;
   mouseCheck = false;
