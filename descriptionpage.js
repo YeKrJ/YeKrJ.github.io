@@ -6,8 +6,7 @@ function description(i){
   } else {
     image(modeDes[i],45*wX,218*wX,299*wX,103*wX);
   }
-  image(caution,59*wX,335*wX,265*wX,136*wX);
-  image(startDes,47*wX,505*wX,297*wX,11*wX);
+  image(caution,59*wX,345*wX,265*wX,165*wX);
   if (mouseCheck) nextButtonDes.over();
   nextButtonDes.display();
   if (desCheck < 10) {

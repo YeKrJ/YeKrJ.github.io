@@ -127,6 +127,13 @@ function resultMulti() {
   let cardY = height/2-cardHeight+5*wX;
   let mN = width/cardNumber;
   for(let im = 0; im < cardNumber; im++) {
+    if (tarotStar[resultMultiNumber[im]] == '★' || tarotStar[resultMultiNumber[im]] == '★★' || tarotStar[resultMultiNumber[im]] == '★★★' || tarotStar[resultMultiNumber[im]] == '★★★★' || tarotStar[resultMultiNumber[im]] == '★★★★★') {
+      fill(50, 50, 150);
+    } else if (tarotStar[resultMultiNumber[im]] == '★☆') {
+      fill(30);
+    } else {
+      fill(150, 20, 50);
+    }
     textAlign(CENTER);
     image(cardJ[resultMultiNumber[im]], (mN*im+(mN/2)-cardWidth/2), cardY, cardWidth, cardHeight);
     textFont(fontgm);
@@ -135,14 +142,15 @@ function resultMulti() {
     textSize(20*wX*multiScale[cardNumber]);
     textFont(fontg);
     textLeading(25*wX*multiScale[cardNumber]);
-    text(tarotMultiName[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+20*wX*multiScale[cardNumber]);
+    text(tarotMultiName[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+25*wX*multiScale[cardNumber]);
     textSize(11*wX*multiScale[cardNumber]);
     textFont(fontm);
     if (resultMultiNumber[im] != 10 && resultMultiNumber[im] != 12) {
-    text(tarotStar[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+40*wX*multiScale[cardNumber]);
+    text(tarotStar[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+45*wX*multiScale[cardNumber]);
     } else {
-      text(tarotStar[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+65*wX*multiScale[cardNumber]);
+      text(tarotStar[resultMultiNumber[im]], ((mN*im+(mN/2)-cardWidth/2)+cardWidth/2), cardY+cardHeight+70*wX*multiScale[cardNumber]);
     }
+    fill(0);
   }
 }
 

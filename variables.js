@@ -80,9 +80,9 @@ function preload() {
     fontgm = loadFont("assets/GmarketSansTTFMedium.ttf");
     if (windowWidth > 480) {
     for (i = 1; i < 12; i++) {
-      cardImg[i] = loadImage("assets/cardBack.png");
-      cardImgA[i] = loadImage("assets/cardBackA.png");
-      cardImgS[i] = loadImage("assets/cardBackS.png");
+      cardImg[i] = loadImage("assets/cardEx.png");
+      cardImgA[i] = loadImage("assets/cardExA.png");
+      cardImgS[i] = loadImage("assets/cardExS.png");
     }
       for(let i=0;i<22;i++) {
         cardJ[i] = loadImage("assets/cards/cardJ"+i+".png");

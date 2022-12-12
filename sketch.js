@@ -29,9 +29,9 @@ function setup() {
   inp[1] = new InputBar(cnvRect.x+107*wX, cnvRect.y+170*wX, 50, 20, "옵션1");
   inp[2] = new InputBar(cnvRect.x+167*wX, cnvRect.y+170*wX, 50, 20, "옵션2");
   inp[3] = new InputBar(cnvRect.x+227*wX, cnvRect.y+170*wX, 50, 20, "옵션3");
-  inp[4] = new InputBar(cnvRect.x+107*wX, cnvRect.y+210*wX, 50, 20, "옵션4");
-  inp[5] = new InputBar(cnvRect.x+167*wX, cnvRect.y+210*wX, 50, 20, "옵션5");
-  inp[6] = new InputBar(cnvRect.x+227*wX, cnvRect.y+210*wX, 50, 20, "옵션6");
+  inp[4] = new InputBar(cnvRect.x+107*wX, cnvRect.y+200*wX, 50, 20, "옵션4");
+  inp[5] = new InputBar(cnvRect.x+167*wX, cnvRect.y+200*wX, 50, 20, "옵션5");
+  inp[6] = new InputBar(cnvRect.x+227*wX, cnvRect.y+200*wX, 50, 20, "옵션6");
   inp[7] = new InputBar(cnvRect.x+142*wX, cnvRect.y+170*wX, 100, 20, "본인");
   inp[8] = new InputBar(cnvRect.x+142*wX, cnvRect.y+210*wX, 100, 20, '상대');
   inp[1].inp.hide();
