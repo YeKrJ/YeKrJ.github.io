@@ -80,9 +80,9 @@ function preload() {
     fontgm = loadFont("assets/GmarketSansTTFMedium.ttf");
     if (windowWidth > 480) {
     for (i = 1; i < 12; i++) {
-      cardImg[i] = loadImage("assets/cardEx.png");
-      cardImgA[i] = loadImage("assets/cardExA.png");
-      cardImgS[i] = loadImage("assets/cardExS.png");
+      cardImg[i] = loadImage("assets/cardBack.png");
+      cardImgA[i] = loadImage("assets/cardBackA.png");
+      cardImgS[i] = loadImage("assets/cardBackS.png");
     }
       for(let i=0;i<22;i++) {
         cardJ[i] = loadImage("assets/cards/cardJ"+i+".png");
@@ -173,6 +173,8 @@ function preload() {
     twoInputUI = loadImage("assets/ui/twoInputUI.png")
     multiInputUI = loadImage("assets/ui/multiInputUI.png");
     tarotBGM = createAudio("sounds/bgm.mp3");
+    tarotSFX1 = createAudio("sounds/shuffle.mp3");
+    tarotSFX2 = createAudio("sounds/shuffleNext.mp3");
 }
 
 

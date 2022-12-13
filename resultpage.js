@@ -164,17 +164,31 @@ function resultPageManual() {
   image(cardJ[resultManualNumber1], 38*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
   textAlign(CENTER);
   textSize(13*wX);
-  if (tarotStar[resultMultiNumber[im]] == '★' || tarotStar[resultMultiNumber[im]] == '★★' || tarotStar[resultMultiNumber[im]] == '★★★' || tarotStar[resultMultiNumber[im]] == '★★★★' || tarotStar[resultMultiNumber[im]] == '★★★★★') {
+  if (tarotStar[resultManualNumber1] == '★' || tarotStar[resultManualNumber1] == '★★' || tarotStar[resultManualNumber1] == '★★★' || tarotStar[resultManualNumber1] == '★★★★' || tarotStar[resultManualNumber1] == '★★★★★') {
     fill(50, 50, 150);
-  } else if (tarotStar[resultMultiNumber[im]] == '★☆') {
+  } else if (tarotStar[resultManualNumber1] == '★☆') {
     fill(30);
   } else {
     fill(150, 20, 50);
   }
   text(tarotStar[resultManualNumber1], 86*wX, 275*wX);
   image(cardJ[resultManualNumber2], 147*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
+  if (tarotStar[resultManualNumber2] == '★' || tarotStar[resultManualNumber2] == '★★' || tarotStar[resultManualNumber2] == '★★★' || tarotStar[resultManualNumber2] == '★★★★' || tarotStar[resultManualNumber2] == '★★★★★') {
+    fill(50, 50, 150);
+  } else if (tarotStar[resultManualNumber2] == '★☆') {
+    fill(30);
+  } else {
+    fill(150, 20, 50);
+  }
   text(tarotStar[resultManualNumber2], 195*wX, 275*wX);
   image(cardJ[resultManualNumber3], 256*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
+  if (tarotStar[resultManualNumber3] == '★' || tarotStar[resultManualNumber3] == '★★' || tarotStar[resultManualNumber3] == '★★★' || tarotStar[resultManualNumber3] == '★★★★' || tarotStar[resultManualNumber3] == '★★★★★') {
+    fill(50, 50, 150);
+  } else if (tarotStar[resultManualNumber3] == '★☆') {
+    fill(30);
+  } else {
+    fill(150, 20, 50);
+  }
   text(tarotStar[resultManualNumber3], 304*wX, 275*wX);
   image(manualUI, 0, 0, width, height);
   fill(0);
