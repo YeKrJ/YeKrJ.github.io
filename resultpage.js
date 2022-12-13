@@ -164,11 +164,18 @@ function resultPageManual() {
   image(cardJ[resultManualNumber1], 38*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
   textAlign(CENTER);
   textSize(13*wX);
-  text(tarotStar[resultManualNumber1], 86*wX, 270*wX);
+  if (tarotStar[resultMultiNumber[im]] == '★' || tarotStar[resultMultiNumber[im]] == '★★' || tarotStar[resultMultiNumber[im]] == '★★★' || tarotStar[resultMultiNumber[im]] == '★★★★' || tarotStar[resultMultiNumber[im]] == '★★★★★') {
+    fill(50, 50, 150);
+  } else if (tarotStar[resultMultiNumber[im]] == '★☆') {
+    fill(30);
+  } else {
+    fill(150, 20, 50);
+  }
+  text(tarotStar[resultManualNumber1], 86*wX, 275*wX);
   image(cardJ[resultManualNumber2], 147*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
-  text(tarotStar[resultManualNumber2], 195*wX, 270*wX);
+  text(tarotStar[resultManualNumber2], 195*wX, 275*wX);
   image(cardJ[resultManualNumber3], 256*wX, 93*wX, 105*wX*0.9, 184*wX*0.9);
-  text(tarotStar[resultManualNumber3], 304*wX, 270*wX);
+  text(tarotStar[resultManualNumber3], 304*wX, 275*wX);
   image(manualUI, 0, 0, width, height);
   fill(0);
   textSize(25*wX);

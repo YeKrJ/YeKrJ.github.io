@@ -172,6 +172,7 @@ function preload() {
     multiUp = loadImage("assets/ui/multiUp.png")
     twoInputUI = loadImage("assets/ui/twoInputUI.png")
     multiInputUI = loadImage("assets/ui/multiInputUI.png");
+    tarotBGM = createAudio("sounds/bgm.mp3");
 }
 
 
