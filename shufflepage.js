@@ -87,7 +87,6 @@ function shufflePage() {
   }
   } 
   if (clickNext > 0) {
-    tarotSFX2.play();
     for(let i=1; i<=8; i++) {
       inp[i].inp.hide();
     }
