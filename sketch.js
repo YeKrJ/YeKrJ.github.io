@@ -241,6 +241,9 @@ function clickNtouch() {
 }
 
 function mouseReleased() {
+  tarotBGM.play();
+  tarotBGM.loop();
+  tarotSFX5.play();
   clickNtouch();
   touchCheck = false;
   mouseCheck = true;

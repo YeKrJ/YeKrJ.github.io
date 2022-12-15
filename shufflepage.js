@@ -45,6 +45,9 @@ function shufflePage() {
     if (ir < 29) {
       ir++
     } 
+    if (j == 20) {
+      tarotSFX1.play();
+    }
     if (j < 80) {
       j+=2
     }
@@ -84,6 +87,7 @@ function shufflePage() {
   }
   } 
   if (clickNext > 0) {
+    tarotSFX2.play();
     for(let i=1; i<=8; i++) {
       inp[i].inp.hide();
     }

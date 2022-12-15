@@ -175,6 +175,9 @@ function preload() {
     tarotBGM = createAudio("sounds/bgm.mp3");
     tarotSFX1 = createAudio("sounds/shuffle.mp3");
     tarotSFX2 = createAudio("sounds/shuffleNext.mp3");
+    tarotSFX3 = createAudio("sounds/select.mp3");
+    tarotSFX4 = createAudio("sounds/unselect.mp3");
+    tarotSFX5 = createAudio("sounds/click.mp3");
 }
 
 
